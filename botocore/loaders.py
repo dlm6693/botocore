@@ -103,13 +103,13 @@ which don't represent the actual service api.
 """
 import logging
 import os
+import zipfile
+from pathlib import PurePosixPath
 
 from botocore import BOTOCORE_ROOT
 from botocore.compat import HAS_GZIP, OrderedDict, json
 from botocore.exceptions import DataNotFoundError, UnknownServiceError
 from botocore.utils import deep_merge
-import zipfile
-from pathlib import PurePosixPath
 
 _JSON_OPEN_METHODS = {
     '.json': open,
@@ -199,7 +199,7 @@ class JSONFileLoader:
                 return data
         return None
 
-    def load_zipped_file(self, zipobj, file_path, ext = '.json'):
+    def load_zipped_file(self, zipobj, file_path, ext='.json'):
         file_with_ext = file_path + ext
         if not self.exists_zip(zipobj, file_with_ext):
             return
@@ -213,6 +213,7 @@ class JSONFileLoader:
 
     def exists_zip(self, zipobj, file_path):
         return zipfile.Path(zipobj, file_path).is_file()
+
 
 def create_loader(search_path_string=None):
     """Create a Loader class.
@@ -284,11 +285,18 @@ class Loader:
             self._extras_types.extend(self.BUILTIN_EXTRAS_TYPES)
 
         self._extras_processor = ExtrasProcessor()
-        self.is_zipped = True if zipfile.is_zipfile(os.path.dirname(BOTOCORE_ROOT)) else False
+        self.is_zipped = (
+            True
+            if zipfile.is_zipfile(os.path.dirname(BOTOCORE_ROOT))
+            else False
+        )
         if self.is_zipped:
             self.zip_root = os.path.dirname(BOTOCORE_ROOT)
             self._search_paths = [
-                (self.zip_root, str(PurePosixPath(search_path).relative_to(self.zip_root)))
+                (
+                    self.zip_root,
+                    str(PurePosixPath(search_path).relative_to(self.zip_root)),
+                )
                 for search_path in self.search_paths
                 if search_path.startswith(self.zip_root)
             ]
@@ -307,15 +315,17 @@ class Loader:
         # f = 'botocore/data/iot/2015-05-28/examples-1.json'
         # result = 'iot/2015-05-28/examples-1.json'
         target_files = [
-            f[len(target)+1:] for f in zipobj.namelist() if f.startswith(target)
+            f[len(target) + 1 :]
+            for f in zipobj.namelist()
+            if f.startswith(target)
         ]
         # e.g. ['iot', '2015-05-28', 'examples-1.json'] -> 'iot'
-        target_folders = set([f.split(os.sep)[0] for f in target_files])
+        target_folders = {f.split(os.sep)[0] for f in target_files}
         return target_folders
 
     def zip_isdir(self, zipobj, target):
         # check if target path is a substring of all file paths in the zipped archive
-        isdir = any((target in file_path for file_path in zipobj.namelist()))
+        isdir = any(target in file_path for file_path in zipobj.namelist())
         # checks if the path is actually a file by attempting to open it
         try:
             zipobj.open(target)
@@ -330,13 +340,12 @@ class Loader:
         for zipobj, possible_path in self._zip_potential_locations():
             with zipobj:
                 possible_services = [
-                    d for d in self.zip_listdir(zipobj, possible_path)
+                    d
+                    for d in self.zip_listdir(zipobj, possible_path)
                     if self.zip_isdir(zipobj, os.path.join(possible_path, d))
                 ]
                 for service_name in possible_services:
-                    full_dirname = os.path.join(
-                        possible_path, service_name
-                    )
+                    full_dirname = os.path.join(possible_path, service_name)
                     api_versions = self.zip_listdir(zipobj, full_dirname)
                     for api_version in api_versions:
                         full_load_path = os.path.join(
@@ -346,7 +355,6 @@ class Loader:
                             services.add(service_name)
                             break
         return sorted(services)
-
 
     @instance_cache
     def list_available_services(self, type_name):
@@ -433,7 +441,6 @@ class Loader:
         if not known_api_versions:
             raise DataNotFoundError(data_path=service_name)
         return sorted(known_api_versions)
-
 
     @instance_cache
     def list_api_versions(self, service_name, type_name):
@@ -582,7 +589,9 @@ class Loader:
                     elif os.path.exists(full_path):
                         yield full_path
 
-    def _zip_potential_locations(self, name=None, must_exist=False, is_dir=False):
+    def _zip_potential_locations(
+        self, name=None, must_exist=False, is_dir=False
+    ):
         for root, path in self.search_paths:
             zipobj = zipfile.ZipFile(root, 'r')
             isdir = self.zip_isdir(zipobj, path)
@@ -597,7 +606,6 @@ class Loader:
                         yield zipobj, full_path
                     elif full_path + os.sep in zipobj.namelist():
                         yield zipobj, full_path
-
 
 
 class ExtrasProcessor:
