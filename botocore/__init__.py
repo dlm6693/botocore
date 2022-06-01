@@ -13,10 +13,19 @@
 # language governing permissions and limitations under the License.
 
 import logging
-import os
 import re
 
+<<<<<<< HEAD
 __version__ = '1.27.19'
+=======
+try:
+    from importlib.resources import files
+# python < 3.9 compatability
+except ImportError:
+    from importlib_resources import files
+
+__version__ = '1.27.17'
+>>>>>>> 9b16a94f2 (zip file functionality for botocore)
 
 
 class NullHandler(logging.Handler):
@@ -61,7 +70,7 @@ _xform_cache = {
 # individual case.
 ScalarTypes = ('string', 'integer', 'boolean', 'timestamp', 'float', 'double')
 
-BOTOCORE_ROOT = os.path.dirname(os.path.abspath(__file__))
+BOTOCORE_ROOT = files('botocore')
 
 
 # Used to specify anonymous (unsigned) request signature
