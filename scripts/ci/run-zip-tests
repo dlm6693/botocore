@@ -41,6 +41,15 @@ def check_state():
     zipped_state = (zip_loader, zip_file, zip_path)
     if not all(zipped_state):
         print("Botocore is not loaded in a zipped context")
+        print(botocore.__loader__)
+        print(botocore.__file__)
+        print(botocore.BOTOCORE_ROOT)
+        print(sys.path)
+        try:
+            print(os.environ['PYTHONPATH'])
+        except:
+            pass
+
         sys.exit(1)
 
 
