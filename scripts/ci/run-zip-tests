@@ -36,7 +36,7 @@ def run(command):
 
 def check_state():
     zip_loader = isinstance(botocore.__loader__, zipimport.zipimporter)
-    zip_file = 'botocore.zip/botocore/__init__.py' in botocore.__file__
+    zip_file = os.path.join('botocore.zip', 'botocore', '/__init__.py') in botocore.__file__
     zip_path = isinstance(botocore.BOTOCORE_ROOT, zipfile.Path)
     zipped_state = (zip_loader, zip_file, zip_path)
     if not all(zipped_state):
