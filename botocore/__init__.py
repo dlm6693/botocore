@@ -17,15 +17,16 @@ import os
 import pathlib
 import re
 
-
 __version__ = '1.27.19'
 
 try:
     # only available in python 3.9+
     from importlib.resources import files
+
     BOTOCORE_ROOT = files('botocore')
 except ImportError:
     BOTOCORE_ROOT = pathlib.Path(os.path.dirname(os.path.abspath(__file__)))
+
 
 class NullHandler(logging.Handler):
     def emit(self, record):
