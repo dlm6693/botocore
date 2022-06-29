@@ -17,7 +17,7 @@ import os
 import pathlib
 import re
 
-__version__ = '1.27.19'
+__version__ = '1.27.20'
 
 try:
     # only available in python 3.9+

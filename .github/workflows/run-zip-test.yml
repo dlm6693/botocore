@@ -23,17 +23,15 @@ jobs:
       - name: Install dependencies
         run: |
           python scripts/ci/install
-      - name: Set path seperator for windows
+      - name: Set PYTHONPATH for windows
         if: matrix.os == 'windows-latest'
         run: |
-          echo "PATH_SEPERATOR='\\'" >> $GITHUB_ENV
-      - name: Set path seperator for ubuntu/mac
+          echo "PYTHONPATH=${{ github.workspace }}\botocore.zip" >> $GITHUB_ENV
+      - name: Set PYTHONPATH for ubuntu/mac
         if: matrix.os == 'ubuntu-latest' || matrix.os == 'macOS-latest'
         run: |
-          echo "PATH_SEPERATOR=/" >> $GITHUB_ENV
+          echo "PYTHONPATH=${{ github.workspace }}/botocore.zip" >> $GITHUB_ENV
       - name: Run tests
-        env:
-          PYTHONPATH: ${{ github.workspace }}${{ env.PATH_SEPERATOR }}botocore.zip
         run: |
           python -m zipfile -c botocore.zip botocore/
           python scripts/ci/run-zip-tests --with-cov --with-xdist --append-import

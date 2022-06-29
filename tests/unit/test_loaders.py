@@ -322,14 +322,6 @@ class TestLoader(BaseEnvVar):
     )
     def test_zip_path_created(self):
         loader = create_loader(self.zip_search_path)
-        self.assertTrue(
-            any(
-                [
-                    self.zip_search_path in str(path)
-                    for path in loader.search_paths
-                ],
-            )
-        )
         zip_path = BotoZipPath(self.zip_path).joinpath('foo')
         # two identical BotoZipPath objects do not 'equal' each other
         matching_zips = [
