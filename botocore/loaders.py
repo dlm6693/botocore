@@ -260,6 +260,8 @@ def _create_path(path):
     parts = path.split(os.sep)
     new_path = os.sep
     while len(parts) > 0:
+        if new_path.endswith(':'):
+            new_path += os.sep
         new_path = os.path.join(new_path, parts.pop(0))
         if is_zipfile(new_path):
             return BotoZipPath(new_path).joinpath(*parts)
@@ -563,7 +565,8 @@ class Loader:
             if path.is_dir():
                 full_path = path
                 if name is not None:
-                    full_path = path.joinpath(name)
+                    name_parts = name.split(os.sep)
+                    full_path = path.joinpath(*name_parts)
                 if not must_exist:
                     yield full_path
                 else:
