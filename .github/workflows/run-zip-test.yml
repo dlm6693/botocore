@@ -30,6 +30,7 @@ jobs:
           else
             export PYTHONPATH=${{ github.workspace }}/botocore.zip
           fi
+          echo $PYTHONPATH
           python -m zipfile -c botocore.zip botocore/
           python scripts/ci/run-zip-tests --with-cov --with-xdist --append-import
           rm botocore.zip
