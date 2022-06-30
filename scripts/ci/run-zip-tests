@@ -44,6 +44,8 @@ def check_state():
         print(botocore.__loader__)
         print(botocore.__file__)
         print(botocore.BOTOCORE_ROOT)
+        print(zip_file)
+        print(type(botocore.BOTOCORE_ROOT))
         print(sys.path)
         try:
             print(os.environ['PYTHONPATH'])
