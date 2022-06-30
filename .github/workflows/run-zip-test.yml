@@ -11,8 +11,8 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        python-version: ['3.9', '3.10', '3.11-dev']
-        os: [ubuntu-latest, macOS-latest, windows-latest]
+        python-version: ['3.9']
+        os: [windows-latest]
 
     steps:
       - uses: actions/checkout@v2
@@ -23,16 +23,12 @@ jobs:
       - name: Install dependencies
         run: |
           python scripts/ci/install
-      - name: Set PYTHONPATH for windows
-        if: matrix.os == 'windows-latest'
-        run: |
-          echo "PYTHONPATH=${{ github.workspace }}\botocore.zip" >> $GITHUB_ENV
-      - name: Set PYTHONPATH for ubuntu/mac
-        if: matrix.os == 'ubuntu-latest' || matrix.os == 'macOS-latest'
-        run: |
-          echo "PYTHONPATH=${{ github.workspace }}/botocore.zip" >> $GITHUB_ENV
       - name: Run tests
         run: |
+          if ["$RUNNER_OS" == "Windows"]; then
+            export PYTHONPATH=${{ github.workspace }}\botocore.zip
+          else
+            export PYTHONPATH=${{ github.workspace }}/botocore.zip
           python -m zipfile -c botocore.zip botocore/
           python scripts/ci/run-zip-tests --with-cov --with-xdist --append-import
           rm botocore.zip
