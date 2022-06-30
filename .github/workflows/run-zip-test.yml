@@ -26,7 +26,7 @@ jobs:
       - name: Run tests
         run: |
           if [ "$RUNNER_OS" == "Windows" ]; then
-            export PYTHONPATH=${{ github.workspace }}\botocore.zip
+            export PYTHONPATH='${{ github.workspace }}\botocore.zip'
           else
             export PYTHONPATH=${{ github.workspace }}/botocore.zip
           fi
