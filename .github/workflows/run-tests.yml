@@ -1,4 +1,4 @@
-name: Run Zip tests
+name: Run tests
 
 on:
   push:
@@ -6,12 +6,12 @@ on:
     branches-ignore: [master]
 
 jobs:
-  zip:
+  build:
     runs-on: '${{ matrix.os }}'
     strategy:
       fail-fast: false
       matrix:
-        python-version: ['3.9', '3.10', '3.11-dev']
+        python-version: ['3.7', '3.8', '3.9', '3.10', '3.11-dev']
         os: [ubuntu-latest, macOS-latest, windows-latest]
 
     steps:
@@ -22,15 +22,13 @@ jobs:
           python-version: '${{ matrix.python-version }}'
       - name: Install dependencies
         run: |
+          pip install codecov
           python scripts/ci/install
       - name: Run tests
         run: |
-          if [ "$RUNNER_OS" == "Windows" ]; then
-            export PYTHONPATH='${{ github.workspace }}\botocore.zip'
-          else
-            export PYTHONPATH=${{ github.workspace }}/botocore.zip
-          fi
-          python -m zipfile -c botocore.zip botocore/
-          python scripts/ci/run-zip-tests --with-cov --with-xdist --append-import
-          rm botocore.zip
-        shell: bash
+          python scripts/ci/run-tests --with-cov --with-xdist
+      - name: Run codecov
+        run: |
+          rm tests/coverage.xml
+          mv tests/.coverage ./
+          codecov
