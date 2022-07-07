@@ -1,0 +1,180 @@
+{
+    "testCases": [
+        {
+            "documentation": "For region us-west-2 with FIPS enabled and DualStack enabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "us-west-2",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://api.ecr-public-fips.us-west-2.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "us-west-2",
+                            "signingName": "ecr-public"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region us-west-2 with FIPS enabled and DualStack disabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "us-west-2",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://api.ecr-public-fips.us-west-2.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "us-west-2",
+                            "signingName": "ecr-public"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region us-west-2 with FIPS disabled and DualStack enabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "us-west-2",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://api.ecr-public.us-west-2.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "us-west-2",
+                            "signingName": "ecr-public"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region us-west-2 with FIPS disabled and DualStack disabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "us-west-2",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://api.ecr-public.us-west-2.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "us-west-2",
+                            "signingName": "ecr-public"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region us-east-1 with FIPS enabled and DualStack enabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "us-east-1",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://api.ecr-public-fips.us-east-1.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "us-east-1",
+                            "signingName": "ecr-public"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region us-east-1 with FIPS enabled and DualStack disabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "us-east-1",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://api.ecr-public-fips.us-east-1.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "us-east-1",
+                            "signingName": "ecr-public"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region us-east-1 with FIPS disabled and DualStack enabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "us-east-1",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://api.ecr-public.us-east-1.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "us-east-1",
+                            "signingName": "ecr-public"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region us-east-1 with FIPS disabled and DualStack disabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "us-east-1",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://api.ecr-public.us-east-1.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "us-east-1",
+                            "signingName": "ecr-public"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        }
+    ]
+}

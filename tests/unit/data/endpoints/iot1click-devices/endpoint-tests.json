@@ -1,0 +1,92 @@
+{
+    "testCases": [
+        {
+            "documentation": "For region us-west-2 with FIPS enabled and DualStack enabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "us-west-2",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://devices.iot1click-fips.us-west-2.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "us-west-2",
+                            "signingName": "iot1click"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region us-west-2 with FIPS enabled and DualStack disabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "us-west-2",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://devices.iot1click-fips.us-west-2.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "us-west-2",
+                            "signingName": "iot1click"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region us-west-2 with FIPS disabled and DualStack enabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "us-west-2",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://devices.iot1click.us-west-2.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "us-west-2",
+                            "signingName": "iot1click"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region us-west-2 with FIPS disabled and DualStack disabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "us-west-2",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://devices.iot1click.us-west-2.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "us-west-2",
+                            "signingName": "iot1click"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        }
+    ]
+}

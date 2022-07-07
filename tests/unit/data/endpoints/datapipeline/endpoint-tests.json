@@ -1,0 +1,620 @@
+{
+    "testCases": [
+        {
+            "documentation": "For region eu-south-1 with FIPS enabled and DualStack enabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "eu-south-1",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://datapipeline-fips.eu-south-1.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "eu-south-1",
+                            "signingName": "datapipeline"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region eu-south-1 with FIPS enabled and DualStack disabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "eu-south-1",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://datapipeline-fips.eu-south-1.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "eu-south-1",
+                            "signingName": "datapipeline"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region eu-south-1 with FIPS disabled and DualStack enabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "eu-south-1",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://datapipeline.eu-south-1.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "eu-south-1",
+                            "signingName": "datapipeline"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region eu-south-1 with FIPS disabled and DualStack disabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "eu-south-1",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://datapipeline.eu-south-1.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "eu-south-1",
+                            "signingName": "datapipeline"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region us-west-2 with FIPS enabled and DualStack enabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "us-west-2",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://datapipeline-fips.us-west-2.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "us-west-2",
+                            "signingName": "datapipeline"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region us-west-2 with FIPS enabled and DualStack disabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "us-west-2",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://datapipeline-fips.us-west-2.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "us-west-2",
+                            "signingName": "datapipeline"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region us-west-2 with FIPS disabled and DualStack enabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "us-west-2",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://datapipeline.us-west-2.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "us-west-2",
+                            "signingName": "datapipeline"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region us-west-2 with FIPS disabled and DualStack disabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "us-west-2",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://datapipeline.us-west-2.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "us-west-2",
+                            "signingName": "datapipeline"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region eu-west-3 with FIPS enabled and DualStack enabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "eu-west-3",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://datapipeline-fips.eu-west-3.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "eu-west-3",
+                            "signingName": "datapipeline"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region eu-west-3 with FIPS enabled and DualStack disabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "eu-west-3",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://datapipeline-fips.eu-west-3.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "eu-west-3",
+                            "signingName": "datapipeline"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region eu-west-3 with FIPS disabled and DualStack enabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "eu-west-3",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://datapipeline.eu-west-3.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "eu-west-3",
+                            "signingName": "datapipeline"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region eu-west-3 with FIPS disabled and DualStack disabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "eu-west-3",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://datapipeline.eu-west-3.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "eu-west-3",
+                            "signingName": "datapipeline"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region eu-west-1 with FIPS enabled and DualStack enabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "eu-west-1",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://datapipeline-fips.eu-west-1.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "eu-west-1",
+                            "signingName": "datapipeline"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region eu-west-1 with FIPS enabled and DualStack disabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "eu-west-1",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://datapipeline-fips.eu-west-1.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "eu-west-1",
+                            "signingName": "datapipeline"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region eu-west-1 with FIPS disabled and DualStack enabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "eu-west-1",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://datapipeline.eu-west-1.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "eu-west-1",
+                            "signingName": "datapipeline"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region eu-west-1 with FIPS disabled and DualStack disabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "eu-west-1",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://datapipeline.eu-west-1.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "eu-west-1",
+                            "signingName": "datapipeline"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region ap-northeast-1 with FIPS enabled and DualStack enabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "ap-northeast-1",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://datapipeline-fips.ap-northeast-1.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "ap-northeast-1",
+                            "signingName": "datapipeline"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region ap-northeast-1 with FIPS enabled and DualStack disabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "ap-northeast-1",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://datapipeline-fips.ap-northeast-1.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "ap-northeast-1",
+                            "signingName": "datapipeline"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region ap-northeast-1 with FIPS disabled and DualStack enabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "ap-northeast-1",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://datapipeline.ap-northeast-1.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "ap-northeast-1",
+                            "signingName": "datapipeline"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region ap-northeast-1 with FIPS disabled and DualStack disabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "ap-northeast-1",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://datapipeline.ap-northeast-1.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "ap-northeast-1",
+                            "signingName": "datapipeline"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region ap-southeast-2 with FIPS enabled and DualStack enabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "ap-southeast-2",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://datapipeline-fips.ap-southeast-2.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "ap-southeast-2",
+                            "signingName": "datapipeline"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region ap-southeast-2 with FIPS enabled and DualStack disabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "ap-southeast-2",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://datapipeline-fips.ap-southeast-2.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "ap-southeast-2",
+                            "signingName": "datapipeline"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region ap-southeast-2 with FIPS disabled and DualStack enabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "ap-southeast-2",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://datapipeline.ap-southeast-2.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "ap-southeast-2",
+                            "signingName": "datapipeline"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region ap-southeast-2 with FIPS disabled and DualStack disabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "ap-southeast-2",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://datapipeline.ap-southeast-2.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "ap-southeast-2",
+                            "signingName": "datapipeline"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region us-east-1 with FIPS enabled and DualStack enabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "us-east-1",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://datapipeline-fips.us-east-1.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "us-east-1",
+                            "signingName": "datapipeline"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region us-east-1 with FIPS enabled and DualStack disabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "us-east-1",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://datapipeline-fips.us-east-1.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "us-east-1",
+                            "signingName": "datapipeline"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region us-east-1 with FIPS disabled and DualStack enabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "us-east-1",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://datapipeline.us-east-1.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "us-east-1",
+                            "signingName": "datapipeline"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region us-east-1 with FIPS disabled and DualStack disabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "us-east-1",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://datapipeline.us-east-1.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "us-east-1",
+                            "signingName": "datapipeline"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        }
+    ]
+}

@@ -1,0 +1,2732 @@
+{
+    "testCases": [
+        {
+            "documentation": "For region ap-south-2 with FIPS enabled and DualStack enabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "ap-south-2",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://codedeploy-fips.ap-south-2.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "ap-south-2",
+                            "signingName": "codedeploy"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region ap-south-2 with FIPS enabled and DualStack disabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "ap-south-2",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://codedeploy-fips.ap-south-2.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "ap-south-2",
+                            "signingName": "codedeploy"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region ap-south-2 with FIPS disabled and DualStack enabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "ap-south-2",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://codedeploy.ap-south-2.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "ap-south-2",
+                            "signingName": "codedeploy"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region ap-south-2 with FIPS disabled and DualStack disabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "ap-south-2",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://codedeploy.ap-south-2.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "ap-south-2",
+                            "signingName": "codedeploy"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region ap-south-1 with FIPS enabled and DualStack enabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "ap-south-1",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://codedeploy-fips.ap-south-1.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "ap-south-1",
+                            "signingName": "codedeploy"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region ap-south-1 with FIPS enabled and DualStack disabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "ap-south-1",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://codedeploy-fips.ap-south-1.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "ap-south-1",
+                            "signingName": "codedeploy"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region ap-south-1 with FIPS disabled and DualStack enabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "ap-south-1",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://codedeploy.ap-south-1.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "ap-south-1",
+                            "signingName": "codedeploy"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region ap-south-1 with FIPS disabled and DualStack disabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "ap-south-1",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://codedeploy.ap-south-1.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "ap-south-1",
+                            "signingName": "codedeploy"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region eu-south-1 with FIPS enabled and DualStack enabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "eu-south-1",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://codedeploy-fips.eu-south-1.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "eu-south-1",
+                            "signingName": "codedeploy"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region eu-south-1 with FIPS enabled and DualStack disabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "eu-south-1",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://codedeploy-fips.eu-south-1.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "eu-south-1",
+                            "signingName": "codedeploy"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region eu-south-1 with FIPS disabled and DualStack enabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "eu-south-1",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://codedeploy.eu-south-1.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "eu-south-1",
+                            "signingName": "codedeploy"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region eu-south-1 with FIPS disabled and DualStack disabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "eu-south-1",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://codedeploy.eu-south-1.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "eu-south-1",
+                            "signingName": "codedeploy"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region eu-south-2 with FIPS enabled and DualStack enabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "eu-south-2",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://codedeploy-fips.eu-south-2.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "eu-south-2",
+                            "signingName": "codedeploy"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region eu-south-2 with FIPS enabled and DualStack disabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "eu-south-2",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://codedeploy-fips.eu-south-2.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "eu-south-2",
+                            "signingName": "codedeploy"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region eu-south-2 with FIPS disabled and DualStack enabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "eu-south-2",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://codedeploy.eu-south-2.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "eu-south-2",
+                            "signingName": "codedeploy"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region eu-south-2 with FIPS disabled and DualStack disabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "eu-south-2",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://codedeploy.eu-south-2.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "eu-south-2",
+                            "signingName": "codedeploy"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region us-gov-east-1 with FIPS enabled and DualStack enabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "us-gov-east-1",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://codedeploy-fips.us-gov-east-1.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "us-gov-east-1",
+                            "signingName": "codedeploy"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region us-gov-east-1 with FIPS enabled and DualStack disabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "us-gov-east-1",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://codedeploy-fips.us-gov-east-1.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "us-gov-east-1",
+                            "signingName": "codedeploy"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region us-gov-east-1 with FIPS disabled and DualStack enabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "us-gov-east-1",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://codedeploy.us-gov-east-1.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "us-gov-east-1",
+                            "signingName": "codedeploy"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region us-gov-east-1 with FIPS disabled and DualStack disabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "us-gov-east-1",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://codedeploy.us-gov-east-1.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "us-gov-east-1",
+                            "signingName": "codedeploy"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region me-central-1 with FIPS enabled and DualStack enabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "me-central-1",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://codedeploy-fips.me-central-1.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "me-central-1",
+                            "signingName": "codedeploy"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region me-central-1 with FIPS enabled and DualStack disabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "me-central-1",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://codedeploy-fips.me-central-1.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "me-central-1",
+                            "signingName": "codedeploy"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region me-central-1 with FIPS disabled and DualStack enabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "me-central-1",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://codedeploy.me-central-1.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "me-central-1",
+                            "signingName": "codedeploy"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region me-central-1 with FIPS disabled and DualStack disabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "me-central-1",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://codedeploy.me-central-1.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "me-central-1",
+                            "signingName": "codedeploy"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region ca-central-1 with FIPS enabled and DualStack enabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "ca-central-1",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://codedeploy-fips.ca-central-1.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "ca-central-1",
+                            "signingName": "codedeploy"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region ca-central-1 with FIPS enabled and DualStack disabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "ca-central-1",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://codedeploy-fips.ca-central-1.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "ca-central-1",
+                            "signingName": "codedeploy"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region ca-central-1 with FIPS disabled and DualStack enabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "ca-central-1",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://codedeploy.ca-central-1.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "ca-central-1",
+                            "signingName": "codedeploy"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region ca-central-1 with FIPS disabled and DualStack disabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "ca-central-1",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://codedeploy.ca-central-1.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "ca-central-1",
+                            "signingName": "codedeploy"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region eu-central-1 with FIPS enabled and DualStack enabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "eu-central-1",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://codedeploy-fips.eu-central-1.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "eu-central-1",
+                            "signingName": "codedeploy"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region eu-central-1 with FIPS enabled and DualStack disabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "eu-central-1",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://codedeploy-fips.eu-central-1.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "eu-central-1",
+                            "signingName": "codedeploy"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region eu-central-1 with FIPS disabled and DualStack enabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "eu-central-1",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://codedeploy.eu-central-1.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "eu-central-1",
+                            "signingName": "codedeploy"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region eu-central-1 with FIPS disabled and DualStack disabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "eu-central-1",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://codedeploy.eu-central-1.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "eu-central-1",
+                            "signingName": "codedeploy"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region eu-central-2 with FIPS enabled and DualStack enabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "eu-central-2",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://codedeploy-fips.eu-central-2.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "eu-central-2",
+                            "signingName": "codedeploy"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region eu-central-2 with FIPS enabled and DualStack disabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "eu-central-2",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://codedeploy-fips.eu-central-2.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "eu-central-2",
+                            "signingName": "codedeploy"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region eu-central-2 with FIPS disabled and DualStack enabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "eu-central-2",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://codedeploy.eu-central-2.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "eu-central-2",
+                            "signingName": "codedeploy"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region eu-central-2 with FIPS disabled and DualStack disabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "eu-central-2",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://codedeploy.eu-central-2.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "eu-central-2",
+                            "signingName": "codedeploy"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region us-west-1 with FIPS enabled and DualStack enabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "us-west-1",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://codedeploy-fips.us-west-1.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "us-west-1",
+                            "signingName": "codedeploy"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region us-west-1 with FIPS enabled and DualStack disabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "us-west-1",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://codedeploy-fips.us-west-1.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "us-west-1",
+                            "signingName": "codedeploy"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region us-west-1 with FIPS disabled and DualStack enabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "us-west-1",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://codedeploy.us-west-1.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "us-west-1",
+                            "signingName": "codedeploy"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region us-west-1 with FIPS disabled and DualStack disabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "us-west-1",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://codedeploy.us-west-1.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "us-west-1",
+                            "signingName": "codedeploy"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region us-west-2 with FIPS enabled and DualStack enabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "us-west-2",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://codedeploy-fips.us-west-2.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "us-west-2",
+                            "signingName": "codedeploy"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region us-west-2 with FIPS enabled and DualStack disabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "us-west-2",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://codedeploy-fips.us-west-2.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "us-west-2",
+                            "signingName": "codedeploy"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region us-west-2 with FIPS disabled and DualStack enabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "us-west-2",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://codedeploy.us-west-2.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "us-west-2",
+                            "signingName": "codedeploy"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region us-west-2 with FIPS disabled and DualStack disabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "us-west-2",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://codedeploy.us-west-2.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "us-west-2",
+                            "signingName": "codedeploy"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region af-south-1 with FIPS enabled and DualStack enabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "af-south-1",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://codedeploy-fips.af-south-1.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "af-south-1",
+                            "signingName": "codedeploy"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region af-south-1 with FIPS enabled and DualStack disabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "af-south-1",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://codedeploy-fips.af-south-1.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "af-south-1",
+                            "signingName": "codedeploy"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region af-south-1 with FIPS disabled and DualStack enabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "af-south-1",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://codedeploy.af-south-1.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "af-south-1",
+                            "signingName": "codedeploy"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region af-south-1 with FIPS disabled and DualStack disabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "af-south-1",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://codedeploy.af-south-1.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "af-south-1",
+                            "signingName": "codedeploy"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region eu-north-1 with FIPS enabled and DualStack enabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "eu-north-1",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://codedeploy-fips.eu-north-1.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "eu-north-1",
+                            "signingName": "codedeploy"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region eu-north-1 with FIPS enabled and DualStack disabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "eu-north-1",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://codedeploy-fips.eu-north-1.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "eu-north-1",
+                            "signingName": "codedeploy"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region eu-north-1 with FIPS disabled and DualStack enabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "eu-north-1",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://codedeploy.eu-north-1.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "eu-north-1",
+                            "signingName": "codedeploy"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region eu-north-1 with FIPS disabled and DualStack disabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "eu-north-1",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://codedeploy.eu-north-1.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "eu-north-1",
+                            "signingName": "codedeploy"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region eu-west-3 with FIPS enabled and DualStack enabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "eu-west-3",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://codedeploy-fips.eu-west-3.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "eu-west-3",
+                            "signingName": "codedeploy"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region eu-west-3 with FIPS enabled and DualStack disabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "eu-west-3",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://codedeploy-fips.eu-west-3.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "eu-west-3",
+                            "signingName": "codedeploy"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region eu-west-3 with FIPS disabled and DualStack enabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "eu-west-3",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://codedeploy.eu-west-3.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "eu-west-3",
+                            "signingName": "codedeploy"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region eu-west-3 with FIPS disabled and DualStack disabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "eu-west-3",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://codedeploy.eu-west-3.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "eu-west-3",
+                            "signingName": "codedeploy"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region eu-west-2 with FIPS enabled and DualStack enabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "eu-west-2",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://codedeploy-fips.eu-west-2.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "eu-west-2",
+                            "signingName": "codedeploy"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region eu-west-2 with FIPS enabled and DualStack disabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "eu-west-2",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://codedeploy-fips.eu-west-2.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "eu-west-2",
+                            "signingName": "codedeploy"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region eu-west-2 with FIPS disabled and DualStack enabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "eu-west-2",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://codedeploy.eu-west-2.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "eu-west-2",
+                            "signingName": "codedeploy"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region eu-west-2 with FIPS disabled and DualStack disabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "eu-west-2",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://codedeploy.eu-west-2.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "eu-west-2",
+                            "signingName": "codedeploy"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region eu-west-1 with FIPS enabled and DualStack enabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "eu-west-1",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://codedeploy-fips.eu-west-1.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "eu-west-1",
+                            "signingName": "codedeploy"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region eu-west-1 with FIPS enabled and DualStack disabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "eu-west-1",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://codedeploy-fips.eu-west-1.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "eu-west-1",
+                            "signingName": "codedeploy"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region eu-west-1 with FIPS disabled and DualStack enabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "eu-west-1",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://codedeploy.eu-west-1.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "eu-west-1",
+                            "signingName": "codedeploy"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region eu-west-1 with FIPS disabled and DualStack disabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "eu-west-1",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://codedeploy.eu-west-1.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "eu-west-1",
+                            "signingName": "codedeploy"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region ap-northeast-3 with FIPS enabled and DualStack enabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "ap-northeast-3",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://codedeploy-fips.ap-northeast-3.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "ap-northeast-3",
+                            "signingName": "codedeploy"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region ap-northeast-3 with FIPS enabled and DualStack disabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "ap-northeast-3",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://codedeploy-fips.ap-northeast-3.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "ap-northeast-3",
+                            "signingName": "codedeploy"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region ap-northeast-3 with FIPS disabled and DualStack enabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "ap-northeast-3",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://codedeploy.ap-northeast-3.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "ap-northeast-3",
+                            "signingName": "codedeploy"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region ap-northeast-3 with FIPS disabled and DualStack disabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "ap-northeast-3",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://codedeploy.ap-northeast-3.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "ap-northeast-3",
+                            "signingName": "codedeploy"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region ap-northeast-2 with FIPS enabled and DualStack enabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "ap-northeast-2",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://codedeploy-fips.ap-northeast-2.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "ap-northeast-2",
+                            "signingName": "codedeploy"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region ap-northeast-2 with FIPS enabled and DualStack disabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "ap-northeast-2",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://codedeploy-fips.ap-northeast-2.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "ap-northeast-2",
+                            "signingName": "codedeploy"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region ap-northeast-2 with FIPS disabled and DualStack enabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "ap-northeast-2",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://codedeploy.ap-northeast-2.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "ap-northeast-2",
+                            "signingName": "codedeploy"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region ap-northeast-2 with FIPS disabled and DualStack disabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "ap-northeast-2",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://codedeploy.ap-northeast-2.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "ap-northeast-2",
+                            "signingName": "codedeploy"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region ap-northeast-1 with FIPS enabled and DualStack enabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "ap-northeast-1",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://codedeploy-fips.ap-northeast-1.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "ap-northeast-1",
+                            "signingName": "codedeploy"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region ap-northeast-1 with FIPS enabled and DualStack disabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "ap-northeast-1",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://codedeploy-fips.ap-northeast-1.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "ap-northeast-1",
+                            "signingName": "codedeploy"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region ap-northeast-1 with FIPS disabled and DualStack enabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "ap-northeast-1",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://codedeploy.ap-northeast-1.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "ap-northeast-1",
+                            "signingName": "codedeploy"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region ap-northeast-1 with FIPS disabled and DualStack disabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "ap-northeast-1",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://codedeploy.ap-northeast-1.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "ap-northeast-1",
+                            "signingName": "codedeploy"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region me-south-1 with FIPS enabled and DualStack enabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "me-south-1",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://codedeploy-fips.me-south-1.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "me-south-1",
+                            "signingName": "codedeploy"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region me-south-1 with FIPS enabled and DualStack disabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "me-south-1",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://codedeploy-fips.me-south-1.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "me-south-1",
+                            "signingName": "codedeploy"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region me-south-1 with FIPS disabled and DualStack enabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "me-south-1",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://codedeploy.me-south-1.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "me-south-1",
+                            "signingName": "codedeploy"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region me-south-1 with FIPS disabled and DualStack disabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "me-south-1",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://codedeploy.me-south-1.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "me-south-1",
+                            "signingName": "codedeploy"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region sa-east-1 with FIPS enabled and DualStack enabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "sa-east-1",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://codedeploy-fips.sa-east-1.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "sa-east-1",
+                            "signingName": "codedeploy"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region sa-east-1 with FIPS enabled and DualStack disabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "sa-east-1",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://codedeploy-fips.sa-east-1.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "sa-east-1",
+                            "signingName": "codedeploy"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region sa-east-1 with FIPS disabled and DualStack enabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "sa-east-1",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://codedeploy.sa-east-1.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "sa-east-1",
+                            "signingName": "codedeploy"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region sa-east-1 with FIPS disabled and DualStack disabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "sa-east-1",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://codedeploy.sa-east-1.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "sa-east-1",
+                            "signingName": "codedeploy"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region ap-east-1 with FIPS enabled and DualStack enabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "ap-east-1",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://codedeploy-fips.ap-east-1.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "ap-east-1",
+                            "signingName": "codedeploy"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region ap-east-1 with FIPS enabled and DualStack disabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "ap-east-1",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://codedeploy-fips.ap-east-1.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "ap-east-1",
+                            "signingName": "codedeploy"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region ap-east-1 with FIPS disabled and DualStack enabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "ap-east-1",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://codedeploy.ap-east-1.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "ap-east-1",
+                            "signingName": "codedeploy"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region ap-east-1 with FIPS disabled and DualStack disabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "ap-east-1",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://codedeploy.ap-east-1.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "ap-east-1",
+                            "signingName": "codedeploy"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region cn-north-1 with FIPS enabled and DualStack enabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "cn-north-1",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://codedeploy-fips.cn-north-1.api.amazonwebservices.com.cn",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "cn-north-1",
+                            "signingName": "codedeploy"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region cn-north-1 with FIPS enabled and DualStack disabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "cn-north-1",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://codedeploy-fips.cn-north-1.amazonaws.com.cn",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "cn-north-1",
+                            "signingName": "codedeploy"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region cn-north-1 with FIPS disabled and DualStack enabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "cn-north-1",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://codedeploy.cn-north-1.api.amazonwebservices.com.cn",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "cn-north-1",
+                            "signingName": "codedeploy"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region cn-north-1 with FIPS disabled and DualStack disabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "cn-north-1",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://codedeploy.cn-north-1.amazonaws.com.cn",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "cn-north-1",
+                            "signingName": "codedeploy"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region us-gov-west-1 with FIPS enabled and DualStack enabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "us-gov-west-1",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://codedeploy-fips.us-gov-west-1.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "us-gov-west-1",
+                            "signingName": "codedeploy"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region us-gov-west-1 with FIPS enabled and DualStack disabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "us-gov-west-1",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://codedeploy-fips.us-gov-west-1.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "us-gov-west-1",
+                            "signingName": "codedeploy"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region us-gov-west-1 with FIPS disabled and DualStack enabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "us-gov-west-1",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://codedeploy.us-gov-west-1.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "us-gov-west-1",
+                            "signingName": "codedeploy"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region us-gov-west-1 with FIPS disabled and DualStack disabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "us-gov-west-1",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://codedeploy.us-gov-west-1.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "us-gov-west-1",
+                            "signingName": "codedeploy"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region ap-southeast-1 with FIPS enabled and DualStack enabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "ap-southeast-1",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://codedeploy-fips.ap-southeast-1.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "ap-southeast-1",
+                            "signingName": "codedeploy"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region ap-southeast-1 with FIPS enabled and DualStack disabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "ap-southeast-1",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://codedeploy-fips.ap-southeast-1.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "ap-southeast-1",
+                            "signingName": "codedeploy"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region ap-southeast-1 with FIPS disabled and DualStack enabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "ap-southeast-1",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://codedeploy.ap-southeast-1.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "ap-southeast-1",
+                            "signingName": "codedeploy"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region ap-southeast-1 with FIPS disabled and DualStack disabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "ap-southeast-1",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://codedeploy.ap-southeast-1.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "ap-southeast-1",
+                            "signingName": "codedeploy"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region ap-southeast-2 with FIPS enabled and DualStack enabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "ap-southeast-2",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://codedeploy-fips.ap-southeast-2.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "ap-southeast-2",
+                            "signingName": "codedeploy"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region ap-southeast-2 with FIPS enabled and DualStack disabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "ap-southeast-2",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://codedeploy-fips.ap-southeast-2.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "ap-southeast-2",
+                            "signingName": "codedeploy"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region ap-southeast-2 with FIPS disabled and DualStack enabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "ap-southeast-2",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://codedeploy.ap-southeast-2.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "ap-southeast-2",
+                            "signingName": "codedeploy"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region ap-southeast-2 with FIPS disabled and DualStack disabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "ap-southeast-2",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://codedeploy.ap-southeast-2.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "ap-southeast-2",
+                            "signingName": "codedeploy"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region ap-southeast-3 with FIPS enabled and DualStack enabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "ap-southeast-3",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://codedeploy-fips.ap-southeast-3.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "ap-southeast-3",
+                            "signingName": "codedeploy"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region ap-southeast-3 with FIPS enabled and DualStack disabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "ap-southeast-3",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://codedeploy-fips.ap-southeast-3.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "ap-southeast-3",
+                            "signingName": "codedeploy"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region ap-southeast-3 with FIPS disabled and DualStack enabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "ap-southeast-3",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://codedeploy.ap-southeast-3.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "ap-southeast-3",
+                            "signingName": "codedeploy"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region ap-southeast-3 with FIPS disabled and DualStack disabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "ap-southeast-3",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://codedeploy.ap-southeast-3.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "ap-southeast-3",
+                            "signingName": "codedeploy"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region ap-southeast-4 with FIPS enabled and DualStack enabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "ap-southeast-4",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://codedeploy-fips.ap-southeast-4.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "ap-southeast-4",
+                            "signingName": "codedeploy"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region ap-southeast-4 with FIPS enabled and DualStack disabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "ap-southeast-4",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://codedeploy-fips.ap-southeast-4.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "ap-southeast-4",
+                            "signingName": "codedeploy"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region ap-southeast-4 with FIPS disabled and DualStack enabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "ap-southeast-4",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://codedeploy.ap-southeast-4.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "ap-southeast-4",
+                            "signingName": "codedeploy"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region ap-southeast-4 with FIPS disabled and DualStack disabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "ap-southeast-4",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://codedeploy.ap-southeast-4.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "ap-southeast-4",
+                            "signingName": "codedeploy"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region us-east-1 with FIPS enabled and DualStack enabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "us-east-1",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://codedeploy-fips.us-east-1.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "us-east-1",
+                            "signingName": "codedeploy"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region us-east-1 with FIPS enabled and DualStack disabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "us-east-1",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://codedeploy-fips.us-east-1.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "us-east-1",
+                            "signingName": "codedeploy"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region us-east-1 with FIPS disabled and DualStack enabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "us-east-1",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://codedeploy.us-east-1.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "us-east-1",
+                            "signingName": "codedeploy"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region us-east-1 with FIPS disabled and DualStack disabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "us-east-1",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://codedeploy.us-east-1.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "us-east-1",
+                            "signingName": "codedeploy"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region us-east-2 with FIPS enabled and DualStack enabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "us-east-2",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://codedeploy-fips.us-east-2.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "us-east-2",
+                            "signingName": "codedeploy"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region us-east-2 with FIPS enabled and DualStack disabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "us-east-2",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://codedeploy-fips.us-east-2.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "us-east-2",
+                            "signingName": "codedeploy"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region us-east-2 with FIPS disabled and DualStack enabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "us-east-2",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://codedeploy.us-east-2.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "us-east-2",
+                            "signingName": "codedeploy"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region us-east-2 with FIPS disabled and DualStack disabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "us-east-2",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://codedeploy.us-east-2.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "us-east-2",
+                            "signingName": "codedeploy"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region cn-northwest-1 with FIPS enabled and DualStack enabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "cn-northwest-1",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://codedeploy-fips.cn-northwest-1.api.amazonwebservices.com.cn",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "cn-northwest-1",
+                            "signingName": "codedeploy"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region cn-northwest-1 with FIPS enabled and DualStack disabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "cn-northwest-1",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://codedeploy-fips.cn-northwest-1.amazonaws.com.cn",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "cn-northwest-1",
+                            "signingName": "codedeploy"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region cn-northwest-1 with FIPS disabled and DualStack enabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "cn-northwest-1",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://codedeploy.cn-northwest-1.api.amazonwebservices.com.cn",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "cn-northwest-1",
+                            "signingName": "codedeploy"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region cn-northwest-1 with FIPS disabled and DualStack disabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "cn-northwest-1",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://codedeploy.cn-northwest-1.amazonaws.com.cn",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "cn-northwest-1",
+                            "signingName": "codedeploy"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        }
+    ]
+}

@@ -1,0 +1,1500 @@
+{
+    "testCases": [
+        {
+            "documentation": "For region ap-south-1 with FIPS enabled and DualStack enabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "ap-south-1",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://amplifybackend-fips.ap-south-1.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "ap-south-1",
+                            "signingName": "amplifybackend"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region ap-south-1 with FIPS enabled and DualStack disabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "ap-south-1",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://amplifybackend-fips.ap-south-1.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "ap-south-1",
+                            "signingName": "amplifybackend"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region ap-south-1 with FIPS disabled and DualStack enabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "ap-south-1",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://amplifybackend.ap-south-1.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "ap-south-1",
+                            "signingName": "amplifybackend"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region ap-south-1 with FIPS disabled and DualStack disabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "ap-south-1",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://amplifybackend.ap-south-1.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "ap-south-1",
+                            "signingName": "amplifybackend"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region ca-central-1 with FIPS enabled and DualStack enabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "ca-central-1",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://amplifybackend-fips.ca-central-1.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "ca-central-1",
+                            "signingName": "amplifybackend"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region ca-central-1 with FIPS enabled and DualStack disabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "ca-central-1",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://amplifybackend-fips.ca-central-1.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "ca-central-1",
+                            "signingName": "amplifybackend"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region ca-central-1 with FIPS disabled and DualStack enabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "ca-central-1",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://amplifybackend.ca-central-1.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "ca-central-1",
+                            "signingName": "amplifybackend"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region ca-central-1 with FIPS disabled and DualStack disabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "ca-central-1",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://amplifybackend.ca-central-1.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "ca-central-1",
+                            "signingName": "amplifybackend"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region eu-central-1 with FIPS enabled and DualStack enabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "eu-central-1",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://amplifybackend-fips.eu-central-1.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "eu-central-1",
+                            "signingName": "amplifybackend"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region eu-central-1 with FIPS enabled and DualStack disabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "eu-central-1",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://amplifybackend-fips.eu-central-1.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "eu-central-1",
+                            "signingName": "amplifybackend"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region eu-central-1 with FIPS disabled and DualStack enabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "eu-central-1",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://amplifybackend.eu-central-1.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "eu-central-1",
+                            "signingName": "amplifybackend"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region eu-central-1 with FIPS disabled and DualStack disabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "eu-central-1",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://amplifybackend.eu-central-1.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "eu-central-1",
+                            "signingName": "amplifybackend"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region us-west-1 with FIPS enabled and DualStack enabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "us-west-1",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://amplifybackend-fips.us-west-1.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "us-west-1",
+                            "signingName": "amplifybackend"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region us-west-1 with FIPS enabled and DualStack disabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "us-west-1",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://amplifybackend-fips.us-west-1.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "us-west-1",
+                            "signingName": "amplifybackend"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region us-west-1 with FIPS disabled and DualStack enabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "us-west-1",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://amplifybackend.us-west-1.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "us-west-1",
+                            "signingName": "amplifybackend"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region us-west-1 with FIPS disabled and DualStack disabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "us-west-1",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://amplifybackend.us-west-1.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "us-west-1",
+                            "signingName": "amplifybackend"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region us-west-2 with FIPS enabled and DualStack enabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "us-west-2",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://amplifybackend-fips.us-west-2.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "us-west-2",
+                            "signingName": "amplifybackend"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region us-west-2 with FIPS enabled and DualStack disabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "us-west-2",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://amplifybackend-fips.us-west-2.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "us-west-2",
+                            "signingName": "amplifybackend"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region us-west-2 with FIPS disabled and DualStack enabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "us-west-2",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://amplifybackend.us-west-2.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "us-west-2",
+                            "signingName": "amplifybackend"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region us-west-2 with FIPS disabled and DualStack disabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "us-west-2",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://amplifybackend.us-west-2.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "us-west-2",
+                            "signingName": "amplifybackend"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region eu-north-1 with FIPS enabled and DualStack enabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "eu-north-1",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://amplifybackend-fips.eu-north-1.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "eu-north-1",
+                            "signingName": "amplifybackend"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region eu-north-1 with FIPS enabled and DualStack disabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "eu-north-1",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://amplifybackend-fips.eu-north-1.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "eu-north-1",
+                            "signingName": "amplifybackend"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region eu-north-1 with FIPS disabled and DualStack enabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "eu-north-1",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://amplifybackend.eu-north-1.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "eu-north-1",
+                            "signingName": "amplifybackend"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region eu-north-1 with FIPS disabled and DualStack disabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "eu-north-1",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://amplifybackend.eu-north-1.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "eu-north-1",
+                            "signingName": "amplifybackend"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region eu-west-3 with FIPS enabled and DualStack enabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "eu-west-3",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://amplifybackend-fips.eu-west-3.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "eu-west-3",
+                            "signingName": "amplifybackend"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region eu-west-3 with FIPS enabled and DualStack disabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "eu-west-3",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://amplifybackend-fips.eu-west-3.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "eu-west-3",
+                            "signingName": "amplifybackend"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region eu-west-3 with FIPS disabled and DualStack enabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "eu-west-3",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://amplifybackend.eu-west-3.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "eu-west-3",
+                            "signingName": "amplifybackend"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region eu-west-3 with FIPS disabled and DualStack disabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "eu-west-3",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://amplifybackend.eu-west-3.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "eu-west-3",
+                            "signingName": "amplifybackend"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region eu-west-2 with FIPS enabled and DualStack enabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "eu-west-2",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://amplifybackend-fips.eu-west-2.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "eu-west-2",
+                            "signingName": "amplifybackend"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region eu-west-2 with FIPS enabled and DualStack disabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "eu-west-2",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://amplifybackend-fips.eu-west-2.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "eu-west-2",
+                            "signingName": "amplifybackend"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region eu-west-2 with FIPS disabled and DualStack enabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "eu-west-2",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://amplifybackend.eu-west-2.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "eu-west-2",
+                            "signingName": "amplifybackend"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region eu-west-2 with FIPS disabled and DualStack disabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "eu-west-2",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://amplifybackend.eu-west-2.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "eu-west-2",
+                            "signingName": "amplifybackend"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region eu-west-1 with FIPS enabled and DualStack enabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "eu-west-1",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://amplifybackend-fips.eu-west-1.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "eu-west-1",
+                            "signingName": "amplifybackend"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region eu-west-1 with FIPS enabled and DualStack disabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "eu-west-1",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://amplifybackend-fips.eu-west-1.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "eu-west-1",
+                            "signingName": "amplifybackend"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region eu-west-1 with FIPS disabled and DualStack enabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "eu-west-1",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://amplifybackend.eu-west-1.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "eu-west-1",
+                            "signingName": "amplifybackend"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region eu-west-1 with FIPS disabled and DualStack disabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "eu-west-1",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://amplifybackend.eu-west-1.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "eu-west-1",
+                            "signingName": "amplifybackend"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region ap-northeast-2 with FIPS enabled and DualStack enabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "ap-northeast-2",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://amplifybackend-fips.ap-northeast-2.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "ap-northeast-2",
+                            "signingName": "amplifybackend"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region ap-northeast-2 with FIPS enabled and DualStack disabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "ap-northeast-2",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://amplifybackend-fips.ap-northeast-2.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "ap-northeast-2",
+                            "signingName": "amplifybackend"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region ap-northeast-2 with FIPS disabled and DualStack enabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "ap-northeast-2",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://amplifybackend.ap-northeast-2.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "ap-northeast-2",
+                            "signingName": "amplifybackend"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region ap-northeast-2 with FIPS disabled and DualStack disabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "ap-northeast-2",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://amplifybackend.ap-northeast-2.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "ap-northeast-2",
+                            "signingName": "amplifybackend"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region ap-northeast-1 with FIPS enabled and DualStack enabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "ap-northeast-1",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://amplifybackend-fips.ap-northeast-1.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "ap-northeast-1",
+                            "signingName": "amplifybackend"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region ap-northeast-1 with FIPS enabled and DualStack disabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "ap-northeast-1",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://amplifybackend-fips.ap-northeast-1.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "ap-northeast-1",
+                            "signingName": "amplifybackend"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region ap-northeast-1 with FIPS disabled and DualStack enabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "ap-northeast-1",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://amplifybackend.ap-northeast-1.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "ap-northeast-1",
+                            "signingName": "amplifybackend"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region ap-northeast-1 with FIPS disabled and DualStack disabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "ap-northeast-1",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://amplifybackend.ap-northeast-1.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "ap-northeast-1",
+                            "signingName": "amplifybackend"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region me-south-1 with FIPS enabled and DualStack enabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "me-south-1",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://amplifybackend-fips.me-south-1.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "me-south-1",
+                            "signingName": "amplifybackend"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region me-south-1 with FIPS enabled and DualStack disabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "me-south-1",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://amplifybackend-fips.me-south-1.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "me-south-1",
+                            "signingName": "amplifybackend"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region me-south-1 with FIPS disabled and DualStack enabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "me-south-1",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://amplifybackend.me-south-1.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "me-south-1",
+                            "signingName": "amplifybackend"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region me-south-1 with FIPS disabled and DualStack disabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "me-south-1",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://amplifybackend.me-south-1.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "me-south-1",
+                            "signingName": "amplifybackend"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region sa-east-1 with FIPS enabled and DualStack enabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "sa-east-1",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://amplifybackend-fips.sa-east-1.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "sa-east-1",
+                            "signingName": "amplifybackend"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region sa-east-1 with FIPS enabled and DualStack disabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "sa-east-1",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://amplifybackend-fips.sa-east-1.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "sa-east-1",
+                            "signingName": "amplifybackend"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region sa-east-1 with FIPS disabled and DualStack enabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "sa-east-1",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://amplifybackend.sa-east-1.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "sa-east-1",
+                            "signingName": "amplifybackend"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region sa-east-1 with FIPS disabled and DualStack disabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "sa-east-1",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://amplifybackend.sa-east-1.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "sa-east-1",
+                            "signingName": "amplifybackend"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region ap-southeast-1 with FIPS enabled and DualStack enabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "ap-southeast-1",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://amplifybackend-fips.ap-southeast-1.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "ap-southeast-1",
+                            "signingName": "amplifybackend"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region ap-southeast-1 with FIPS enabled and DualStack disabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "ap-southeast-1",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://amplifybackend-fips.ap-southeast-1.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "ap-southeast-1",
+                            "signingName": "amplifybackend"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region ap-southeast-1 with FIPS disabled and DualStack enabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "ap-southeast-1",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://amplifybackend.ap-southeast-1.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "ap-southeast-1",
+                            "signingName": "amplifybackend"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region ap-southeast-1 with FIPS disabled and DualStack disabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "ap-southeast-1",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://amplifybackend.ap-southeast-1.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "ap-southeast-1",
+                            "signingName": "amplifybackend"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region ap-southeast-2 with FIPS enabled and DualStack enabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "ap-southeast-2",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://amplifybackend-fips.ap-southeast-2.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "ap-southeast-2",
+                            "signingName": "amplifybackend"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region ap-southeast-2 with FIPS enabled and DualStack disabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "ap-southeast-2",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://amplifybackend-fips.ap-southeast-2.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "ap-southeast-2",
+                            "signingName": "amplifybackend"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region ap-southeast-2 with FIPS disabled and DualStack enabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "ap-southeast-2",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://amplifybackend.ap-southeast-2.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "ap-southeast-2",
+                            "signingName": "amplifybackend"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region ap-southeast-2 with FIPS disabled and DualStack disabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "ap-southeast-2",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://amplifybackend.ap-southeast-2.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "ap-southeast-2",
+                            "signingName": "amplifybackend"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region us-east-1 with FIPS enabled and DualStack enabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "us-east-1",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://amplifybackend-fips.us-east-1.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "us-east-1",
+                            "signingName": "amplifybackend"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region us-east-1 with FIPS enabled and DualStack disabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "us-east-1",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://amplifybackend-fips.us-east-1.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "us-east-1",
+                            "signingName": "amplifybackend"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region us-east-1 with FIPS disabled and DualStack enabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "us-east-1",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://amplifybackend.us-east-1.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "us-east-1",
+                            "signingName": "amplifybackend"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region us-east-1 with FIPS disabled and DualStack disabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "us-east-1",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://amplifybackend.us-east-1.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "us-east-1",
+                            "signingName": "amplifybackend"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region us-east-2 with FIPS enabled and DualStack enabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "us-east-2",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://amplifybackend-fips.us-east-2.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "us-east-2",
+                            "signingName": "amplifybackend"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region us-east-2 with FIPS enabled and DualStack disabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "us-east-2",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://amplifybackend-fips.us-east-2.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "us-east-2",
+                            "signingName": "amplifybackend"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region us-east-2 with FIPS disabled and DualStack enabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "us-east-2",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://amplifybackend.us-east-2.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "us-east-2",
+                            "signingName": "amplifybackend"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        },
+        {
+            "documentation": "For region us-east-2 with FIPS disabled and DualStack disabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "us-east-2",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://amplifybackend.us-east-2.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "name": "v4",
+                            "signingScope": "us-east-2",
+                            "signingName": "amplifybackend"
+                        }
+                    ]
+                },
+                "headers": {}
+            },
+            "operationInputs": []
+        }
+    ]
+}
