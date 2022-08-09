@@ -1,0 +1,508 @@
+{
+    "testCases": [
+        {
+            "documentation": "For region us-gov-east-1 with FIPS enabled and DualStack enabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "us-gov-east-1",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://meetings-chime-fips.us-gov-east-1.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "signingScope": "us-gov-east-1",
+                            "name": "v4",
+                            "signingName": "chime"
+                        }
+                    ]
+                },
+                "headers": {}
+            }
+        },
+        {
+            "documentation": "For region us-gov-east-1 with FIPS enabled and DualStack disabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "us-gov-east-1",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://meetings-chime-fips.us-gov-east-1.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "signingScope": "us-gov-east-1",
+                            "name": "v4",
+                            "signingName": "chime"
+                        }
+                    ]
+                },
+                "headers": {}
+            }
+        },
+        {
+            "documentation": "For region us-gov-east-1 with FIPS disabled and DualStack enabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "us-gov-east-1",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://meetings-chime.us-gov-east-1.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "signingScope": "us-gov-east-1",
+                            "name": "v4",
+                            "signingName": "chime"
+                        }
+                    ]
+                },
+                "headers": {}
+            }
+        },
+        {
+            "documentation": "For region us-gov-east-1 with FIPS disabled and DualStack disabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "us-gov-east-1",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://meetings-chime.us-gov-east-1.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "signingScope": "us-gov-east-1",
+                            "name": "v4",
+                            "signingName": "chime"
+                        }
+                    ]
+                },
+                "headers": {}
+            }
+        },
+        {
+            "documentation": "For region eu-central-1 with FIPS enabled and DualStack enabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "eu-central-1",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://meetings-chime-fips.eu-central-1.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "signingScope": "eu-central-1",
+                            "name": "v4",
+                            "signingName": "chime"
+                        }
+                    ]
+                },
+                "headers": {}
+            }
+        },
+        {
+            "documentation": "For region eu-central-1 with FIPS enabled and DualStack disabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "eu-central-1",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://meetings-chime-fips.eu-central-1.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "signingScope": "eu-central-1",
+                            "name": "v4",
+                            "signingName": "chime"
+                        }
+                    ]
+                },
+                "headers": {}
+            }
+        },
+        {
+            "documentation": "For region eu-central-1 with FIPS disabled and DualStack enabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "eu-central-1",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://meetings-chime.eu-central-1.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "signingScope": "eu-central-1",
+                            "name": "v4",
+                            "signingName": "chime"
+                        }
+                    ]
+                },
+                "headers": {}
+            }
+        },
+        {
+            "documentation": "For region eu-central-1 with FIPS disabled and DualStack disabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "eu-central-1",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://meetings-chime.eu-central-1.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "signingScope": "eu-central-1",
+                            "name": "v4",
+                            "signingName": "chime"
+                        }
+                    ]
+                },
+                "headers": {}
+            }
+        },
+        {
+            "documentation": "For region us-west-2 with FIPS enabled and DualStack enabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "us-west-2",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://meetings-chime-fips.us-west-2.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "signingScope": "us-west-2",
+                            "name": "v4",
+                            "signingName": "chime"
+                        }
+                    ]
+                },
+                "headers": {}
+            }
+        },
+        {
+            "documentation": "For region us-west-2 with FIPS enabled and DualStack disabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "us-west-2",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://meetings-chime-fips.us-west-2.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "signingScope": "us-west-2",
+                            "name": "v4",
+                            "signingName": "chime"
+                        }
+                    ]
+                },
+                "headers": {}
+            }
+        },
+        {
+            "documentation": "For region us-west-2 with FIPS disabled and DualStack enabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "us-west-2",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://meetings-chime.us-west-2.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "signingScope": "us-west-2",
+                            "name": "v4",
+                            "signingName": "chime"
+                        }
+                    ]
+                },
+                "headers": {}
+            }
+        },
+        {
+            "documentation": "For region us-west-2 with FIPS disabled and DualStack disabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "us-west-2",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://meetings-chime.us-west-2.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "signingScope": "us-west-2",
+                            "name": "v4",
+                            "signingName": "chime"
+                        }
+                    ]
+                },
+                "headers": {}
+            }
+        },
+        {
+            "documentation": "For region us-gov-west-1 with FIPS enabled and DualStack enabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "us-gov-west-1",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://meetings-chime-fips.us-gov-west-1.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "signingScope": "us-gov-west-1",
+                            "name": "v4",
+                            "signingName": "chime"
+                        }
+                    ]
+                },
+                "headers": {}
+            }
+        },
+        {
+            "documentation": "For region us-gov-west-1 with FIPS enabled and DualStack disabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "us-gov-west-1",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://meetings-chime-fips.us-gov-west-1.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "signingScope": "us-gov-west-1",
+                            "name": "v4",
+                            "signingName": "chime"
+                        }
+                    ]
+                },
+                "headers": {}
+            }
+        },
+        {
+            "documentation": "For region us-gov-west-1 with FIPS disabled and DualStack enabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "us-gov-west-1",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://meetings-chime.us-gov-west-1.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "signingScope": "us-gov-west-1",
+                            "name": "v4",
+                            "signingName": "chime"
+                        }
+                    ]
+                },
+                "headers": {}
+            }
+        },
+        {
+            "documentation": "For region us-gov-west-1 with FIPS disabled and DualStack disabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "us-gov-west-1",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://meetings-chime.us-gov-west-1.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "signingScope": "us-gov-west-1",
+                            "name": "v4",
+                            "signingName": "chime"
+                        }
+                    ]
+                },
+                "headers": {}
+            }
+        },
+        {
+            "documentation": "For region ap-southeast-1 with FIPS enabled and DualStack enabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "ap-southeast-1",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://meetings-chime-fips.ap-southeast-1.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "signingScope": "ap-southeast-1",
+                            "name": "v4",
+                            "signingName": "chime"
+                        }
+                    ]
+                },
+                "headers": {}
+            }
+        },
+        {
+            "documentation": "For region ap-southeast-1 with FIPS enabled and DualStack disabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "ap-southeast-1",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://meetings-chime-fips.ap-southeast-1.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "signingScope": "ap-southeast-1",
+                            "name": "v4",
+                            "signingName": "chime"
+                        }
+                    ]
+                },
+                "headers": {}
+            }
+        },
+        {
+            "documentation": "For region ap-southeast-1 with FIPS disabled and DualStack enabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "ap-southeast-1",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://meetings-chime.ap-southeast-1.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "signingScope": "ap-southeast-1",
+                            "name": "v4",
+                            "signingName": "chime"
+                        }
+                    ]
+                },
+                "headers": {}
+            }
+        },
+        {
+            "documentation": "For region ap-southeast-1 with FIPS disabled and DualStack disabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "ap-southeast-1",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://meetings-chime.ap-southeast-1.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "signingScope": "ap-southeast-1",
+                            "name": "v4",
+                            "signingName": "chime"
+                        }
+                    ]
+                },
+                "headers": {}
+            }
+        },
+        {
+            "documentation": "For region us-east-1 with FIPS enabled and DualStack enabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "us-east-1",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://meetings-chime-fips.us-east-1.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "signingScope": "us-east-1",
+                            "name": "v4",
+                            "signingName": "chime"
+                        }
+                    ]
+                },
+                "headers": {}
+            }
+        },
+        {
+            "documentation": "For region us-east-1 with FIPS enabled and DualStack disabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "us-east-1",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://meetings-chime-fips.us-east-1.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "signingScope": "us-east-1",
+                            "name": "v4",
+                            "signingName": "chime"
+                        }
+                    ]
+                },
+                "headers": {}
+            }
+        },
+        {
+            "documentation": "For region us-east-1 with FIPS disabled and DualStack enabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "us-east-1",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://meetings-chime.us-east-1.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "signingScope": "us-east-1",
+                            "name": "v4",
+                            "signingName": "chime"
+                        }
+                    ]
+                },
+                "headers": {}
+            }
+        },
+        {
+            "documentation": "For region us-east-1 with FIPS disabled and DualStack disabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "us-east-1",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://meetings-chime.us-east-1.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "signingScope": "us-east-1",
+                            "name": "v4",
+                            "signingName": "chime"
+                        }
+                    ]
+                },
+                "headers": {}
+            }
+        }
+    ]
+}

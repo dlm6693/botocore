@@ -1,0 +1,256 @@
+{
+    "testCases": [
+        {
+            "documentation": "For region eu-west-1 with FIPS enabled and DualStack enabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "eu-west-1",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://lookoutequipment-fips.eu-west-1.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "signingScope": "eu-west-1",
+                            "name": "v4",
+                            "signingName": "lookoutequipment"
+                        }
+                    ]
+                },
+                "headers": {}
+            }
+        },
+        {
+            "documentation": "For region eu-west-1 with FIPS enabled and DualStack disabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "eu-west-1",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://lookoutequipment-fips.eu-west-1.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "signingScope": "eu-west-1",
+                            "name": "v4",
+                            "signingName": "lookoutequipment"
+                        }
+                    ]
+                },
+                "headers": {}
+            }
+        },
+        {
+            "documentation": "For region eu-west-1 with FIPS disabled and DualStack enabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "eu-west-1",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://lookoutequipment.eu-west-1.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "signingScope": "eu-west-1",
+                            "name": "v4",
+                            "signingName": "lookoutequipment"
+                        }
+                    ]
+                },
+                "headers": {}
+            }
+        },
+        {
+            "documentation": "For region eu-west-1 with FIPS disabled and DualStack disabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "eu-west-1",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://lookoutequipment.eu-west-1.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "signingScope": "eu-west-1",
+                            "name": "v4",
+                            "signingName": "lookoutequipment"
+                        }
+                    ]
+                },
+                "headers": {}
+            }
+        },
+        {
+            "documentation": "For region ap-northeast-2 with FIPS enabled and DualStack enabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "ap-northeast-2",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://lookoutequipment-fips.ap-northeast-2.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "signingScope": "ap-northeast-2",
+                            "name": "v4",
+                            "signingName": "lookoutequipment"
+                        }
+                    ]
+                },
+                "headers": {}
+            }
+        },
+        {
+            "documentation": "For region ap-northeast-2 with FIPS enabled and DualStack disabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "ap-northeast-2",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://lookoutequipment-fips.ap-northeast-2.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "signingScope": "ap-northeast-2",
+                            "name": "v4",
+                            "signingName": "lookoutequipment"
+                        }
+                    ]
+                },
+                "headers": {}
+            }
+        },
+        {
+            "documentation": "For region ap-northeast-2 with FIPS disabled and DualStack enabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "ap-northeast-2",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://lookoutequipment.ap-northeast-2.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "signingScope": "ap-northeast-2",
+                            "name": "v4",
+                            "signingName": "lookoutequipment"
+                        }
+                    ]
+                },
+                "headers": {}
+            }
+        },
+        {
+            "documentation": "For region ap-northeast-2 with FIPS disabled and DualStack disabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "ap-northeast-2",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://lookoutequipment.ap-northeast-2.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "signingScope": "ap-northeast-2",
+                            "name": "v4",
+                            "signingName": "lookoutequipment"
+                        }
+                    ]
+                },
+                "headers": {}
+            }
+        },
+        {
+            "documentation": "For region us-east-1 with FIPS enabled and DualStack enabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "us-east-1",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://lookoutequipment-fips.us-east-1.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "signingScope": "us-east-1",
+                            "name": "v4",
+                            "signingName": "lookoutequipment"
+                        }
+                    ]
+                },
+                "headers": {}
+            }
+        },
+        {
+            "documentation": "For region us-east-1 with FIPS enabled and DualStack disabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "us-east-1",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://lookoutequipment-fips.us-east-1.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "signingScope": "us-east-1",
+                            "name": "v4",
+                            "signingName": "lookoutequipment"
+                        }
+                    ]
+                },
+                "headers": {}
+            }
+        },
+        {
+            "documentation": "For region us-east-1 with FIPS disabled and DualStack enabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "us-east-1",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://lookoutequipment.us-east-1.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "signingScope": "us-east-1",
+                            "name": "v4",
+                            "signingName": "lookoutequipment"
+                        }
+                    ]
+                },
+                "headers": {}
+            }
+        },
+        {
+            "documentation": "For region us-east-1 with FIPS disabled and DualStack disabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "us-east-1",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://lookoutequipment.us-east-1.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "signingScope": "us-east-1",
+                            "name": "v4",
+                            "signingName": "lookoutequipment"
+                        }
+                    ]
+                },
+                "headers": {}
+            }
+        }
+    ]
+}

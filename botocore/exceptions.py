@@ -775,3 +775,12 @@ class FlexibleChecksumError(BotoCoreError):
 
 class InvalidEndpointConfigurationError(BotoCoreError):
     fmt = 'Invalid endpoint configuration: {msg}'
+
+
+class EndpointError(BotoCoreError):
+
+    fmt = '{msg}'
+
+    """Error when input parameters match an Error object in a
+    given service's ruleset
+    """

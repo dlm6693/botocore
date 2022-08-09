@@ -1,0 +1,928 @@
+{
+    "testCases": [
+        {
+            "documentation": "For region eu-central-1 with FIPS enabled and DualStack enabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "eu-central-1",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://redshift-serverless-fips.eu-central-1.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "signingScope": "eu-central-1",
+                            "name": "v4",
+                            "signingName": "redshift-serverless"
+                        }
+                    ]
+                },
+                "headers": {}
+            }
+        },
+        {
+            "documentation": "For region eu-central-1 with FIPS enabled and DualStack disabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "eu-central-1",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://redshift-serverless-fips.eu-central-1.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "signingScope": "eu-central-1",
+                            "name": "v4",
+                            "signingName": "redshift-serverless"
+                        }
+                    ]
+                },
+                "headers": {}
+            }
+        },
+        {
+            "documentation": "For region eu-central-1 with FIPS disabled and DualStack enabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "eu-central-1",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://redshift-serverless.eu-central-1.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "signingScope": "eu-central-1",
+                            "name": "v4",
+                            "signingName": "redshift-serverless"
+                        }
+                    ]
+                },
+                "headers": {}
+            }
+        },
+        {
+            "documentation": "For region eu-central-1 with FIPS disabled and DualStack disabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "eu-central-1",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://redshift-serverless.eu-central-1.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "signingScope": "eu-central-1",
+                            "name": "v4",
+                            "signingName": "redshift-serverless"
+                        }
+                    ]
+                },
+                "headers": {}
+            }
+        },
+        {
+            "documentation": "For region us-west-2 with FIPS enabled and DualStack enabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "us-west-2",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://redshift-serverless-fips.us-west-2.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "signingScope": "us-west-2",
+                            "name": "v4",
+                            "signingName": "redshift-serverless"
+                        }
+                    ]
+                },
+                "headers": {}
+            }
+        },
+        {
+            "documentation": "For region us-west-2 with FIPS enabled and DualStack disabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "us-west-2",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://redshift-serverless-fips.us-west-2.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "signingScope": "us-west-2",
+                            "name": "v4",
+                            "signingName": "redshift-serverless"
+                        }
+                    ]
+                },
+                "headers": {}
+            }
+        },
+        {
+            "documentation": "For region us-west-2 with FIPS disabled and DualStack enabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "us-west-2",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://redshift-serverless.us-west-2.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "signingScope": "us-west-2",
+                            "name": "v4",
+                            "signingName": "redshift-serverless"
+                        }
+                    ]
+                },
+                "headers": {}
+            }
+        },
+        {
+            "documentation": "For region us-west-2 with FIPS disabled and DualStack disabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "us-west-2",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://redshift-serverless.us-west-2.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "signingScope": "us-west-2",
+                            "name": "v4",
+                            "signingName": "redshift-serverless"
+                        }
+                    ]
+                },
+                "headers": {}
+            }
+        },
+        {
+            "documentation": "For region eu-north-1 with FIPS enabled and DualStack enabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "eu-north-1",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://redshift-serverless-fips.eu-north-1.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "signingScope": "eu-north-1",
+                            "name": "v4",
+                            "signingName": "redshift-serverless"
+                        }
+                    ]
+                },
+                "headers": {}
+            }
+        },
+        {
+            "documentation": "For region eu-north-1 with FIPS enabled and DualStack disabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "eu-north-1",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://redshift-serverless-fips.eu-north-1.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "signingScope": "eu-north-1",
+                            "name": "v4",
+                            "signingName": "redshift-serverless"
+                        }
+                    ]
+                },
+                "headers": {}
+            }
+        },
+        {
+            "documentation": "For region eu-north-1 with FIPS disabled and DualStack enabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "eu-north-1",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://redshift-serverless.eu-north-1.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "signingScope": "eu-north-1",
+                            "name": "v4",
+                            "signingName": "redshift-serverless"
+                        }
+                    ]
+                },
+                "headers": {}
+            }
+        },
+        {
+            "documentation": "For region eu-north-1 with FIPS disabled and DualStack disabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "eu-north-1",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://redshift-serverless.eu-north-1.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "signingScope": "eu-north-1",
+                            "name": "v4",
+                            "signingName": "redshift-serverless"
+                        }
+                    ]
+                },
+                "headers": {}
+            }
+        },
+        {
+            "documentation": "For region eu-west-2 with FIPS enabled and DualStack enabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "eu-west-2",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://redshift-serverless-fips.eu-west-2.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "signingScope": "eu-west-2",
+                            "name": "v4",
+                            "signingName": "redshift-serverless"
+                        }
+                    ]
+                },
+                "headers": {}
+            }
+        },
+        {
+            "documentation": "For region eu-west-2 with FIPS enabled and DualStack disabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "eu-west-2",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://redshift-serverless-fips.eu-west-2.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "signingScope": "eu-west-2",
+                            "name": "v4",
+                            "signingName": "redshift-serverless"
+                        }
+                    ]
+                },
+                "headers": {}
+            }
+        },
+        {
+            "documentation": "For region eu-west-2 with FIPS disabled and DualStack enabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "eu-west-2",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://redshift-serverless.eu-west-2.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "signingScope": "eu-west-2",
+                            "name": "v4",
+                            "signingName": "redshift-serverless"
+                        }
+                    ]
+                },
+                "headers": {}
+            }
+        },
+        {
+            "documentation": "For region eu-west-2 with FIPS disabled and DualStack disabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "eu-west-2",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://redshift-serverless.eu-west-2.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "signingScope": "eu-west-2",
+                            "name": "v4",
+                            "signingName": "redshift-serverless"
+                        }
+                    ]
+                },
+                "headers": {}
+            }
+        },
+        {
+            "documentation": "For region eu-west-1 with FIPS enabled and DualStack enabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "eu-west-1",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://redshift-serverless-fips.eu-west-1.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "signingScope": "eu-west-1",
+                            "name": "v4",
+                            "signingName": "redshift-serverless"
+                        }
+                    ]
+                },
+                "headers": {}
+            }
+        },
+        {
+            "documentation": "For region eu-west-1 with FIPS enabled and DualStack disabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "eu-west-1",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://redshift-serverless-fips.eu-west-1.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "signingScope": "eu-west-1",
+                            "name": "v4",
+                            "signingName": "redshift-serverless"
+                        }
+                    ]
+                },
+                "headers": {}
+            }
+        },
+        {
+            "documentation": "For region eu-west-1 with FIPS disabled and DualStack enabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "eu-west-1",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://redshift-serverless.eu-west-1.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "signingScope": "eu-west-1",
+                            "name": "v4",
+                            "signingName": "redshift-serverless"
+                        }
+                    ]
+                },
+                "headers": {}
+            }
+        },
+        {
+            "documentation": "For region eu-west-1 with FIPS disabled and DualStack disabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "eu-west-1",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://redshift-serverless.eu-west-1.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "signingScope": "eu-west-1",
+                            "name": "v4",
+                            "signingName": "redshift-serverless"
+                        }
+                    ]
+                },
+                "headers": {}
+            }
+        },
+        {
+            "documentation": "For region ap-northeast-2 with FIPS enabled and DualStack enabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "ap-northeast-2",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://redshift-serverless-fips.ap-northeast-2.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "signingScope": "ap-northeast-2",
+                            "name": "v4",
+                            "signingName": "redshift-serverless"
+                        }
+                    ]
+                },
+                "headers": {}
+            }
+        },
+        {
+            "documentation": "For region ap-northeast-2 with FIPS enabled and DualStack disabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "ap-northeast-2",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://redshift-serverless-fips.ap-northeast-2.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "signingScope": "ap-northeast-2",
+                            "name": "v4",
+                            "signingName": "redshift-serverless"
+                        }
+                    ]
+                },
+                "headers": {}
+            }
+        },
+        {
+            "documentation": "For region ap-northeast-2 with FIPS disabled and DualStack enabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "ap-northeast-2",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://redshift-serverless.ap-northeast-2.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "signingScope": "ap-northeast-2",
+                            "name": "v4",
+                            "signingName": "redshift-serverless"
+                        }
+                    ]
+                },
+                "headers": {}
+            }
+        },
+        {
+            "documentation": "For region ap-northeast-2 with FIPS disabled and DualStack disabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "ap-northeast-2",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://redshift-serverless.ap-northeast-2.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "signingScope": "ap-northeast-2",
+                            "name": "v4",
+                            "signingName": "redshift-serverless"
+                        }
+                    ]
+                },
+                "headers": {}
+            }
+        },
+        {
+            "documentation": "For region ap-northeast-1 with FIPS enabled and DualStack enabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "ap-northeast-1",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://redshift-serverless-fips.ap-northeast-1.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "signingScope": "ap-northeast-1",
+                            "name": "v4",
+                            "signingName": "redshift-serverless"
+                        }
+                    ]
+                },
+                "headers": {}
+            }
+        },
+        {
+            "documentation": "For region ap-northeast-1 with FIPS enabled and DualStack disabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "ap-northeast-1",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://redshift-serverless-fips.ap-northeast-1.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "signingScope": "ap-northeast-1",
+                            "name": "v4",
+                            "signingName": "redshift-serverless"
+                        }
+                    ]
+                },
+                "headers": {}
+            }
+        },
+        {
+            "documentation": "For region ap-northeast-1 with FIPS disabled and DualStack enabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "ap-northeast-1",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://redshift-serverless.ap-northeast-1.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "signingScope": "ap-northeast-1",
+                            "name": "v4",
+                            "signingName": "redshift-serverless"
+                        }
+                    ]
+                },
+                "headers": {}
+            }
+        },
+        {
+            "documentation": "For region ap-northeast-1 with FIPS disabled and DualStack disabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "ap-northeast-1",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://redshift-serverless.ap-northeast-1.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "signingScope": "ap-northeast-1",
+                            "name": "v4",
+                            "signingName": "redshift-serverless"
+                        }
+                    ]
+                },
+                "headers": {}
+            }
+        },
+        {
+            "documentation": "For region ap-southeast-1 with FIPS enabled and DualStack enabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "ap-southeast-1",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://redshift-serverless-fips.ap-southeast-1.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "signingScope": "ap-southeast-1",
+                            "name": "v4",
+                            "signingName": "redshift-serverless"
+                        }
+                    ]
+                },
+                "headers": {}
+            }
+        },
+        {
+            "documentation": "For region ap-southeast-1 with FIPS enabled and DualStack disabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "ap-southeast-1",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://redshift-serverless-fips.ap-southeast-1.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "signingScope": "ap-southeast-1",
+                            "name": "v4",
+                            "signingName": "redshift-serverless"
+                        }
+                    ]
+                },
+                "headers": {}
+            }
+        },
+        {
+            "documentation": "For region ap-southeast-1 with FIPS disabled and DualStack enabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "ap-southeast-1",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://redshift-serverless.ap-southeast-1.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "signingScope": "ap-southeast-1",
+                            "name": "v4",
+                            "signingName": "redshift-serverless"
+                        }
+                    ]
+                },
+                "headers": {}
+            }
+        },
+        {
+            "documentation": "For region ap-southeast-1 with FIPS disabled and DualStack disabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "ap-southeast-1",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://redshift-serverless.ap-southeast-1.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "signingScope": "ap-southeast-1",
+                            "name": "v4",
+                            "signingName": "redshift-serverless"
+                        }
+                    ]
+                },
+                "headers": {}
+            }
+        },
+        {
+            "documentation": "For region ap-southeast-2 with FIPS enabled and DualStack enabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "ap-southeast-2",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://redshift-serverless-fips.ap-southeast-2.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "signingScope": "ap-southeast-2",
+                            "name": "v4",
+                            "signingName": "redshift-serverless"
+                        }
+                    ]
+                },
+                "headers": {}
+            }
+        },
+        {
+            "documentation": "For region ap-southeast-2 with FIPS enabled and DualStack disabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "ap-southeast-2",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://redshift-serverless-fips.ap-southeast-2.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "signingScope": "ap-southeast-2",
+                            "name": "v4",
+                            "signingName": "redshift-serverless"
+                        }
+                    ]
+                },
+                "headers": {}
+            }
+        },
+        {
+            "documentation": "For region ap-southeast-2 with FIPS disabled and DualStack enabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "ap-southeast-2",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://redshift-serverless.ap-southeast-2.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "signingScope": "ap-southeast-2",
+                            "name": "v4",
+                            "signingName": "redshift-serverless"
+                        }
+                    ]
+                },
+                "headers": {}
+            }
+        },
+        {
+            "documentation": "For region ap-southeast-2 with FIPS disabled and DualStack disabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "ap-southeast-2",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://redshift-serverless.ap-southeast-2.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "signingScope": "ap-southeast-2",
+                            "name": "v4",
+                            "signingName": "redshift-serverless"
+                        }
+                    ]
+                },
+                "headers": {}
+            }
+        },
+        {
+            "documentation": "For region us-east-1 with FIPS enabled and DualStack enabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "us-east-1",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://redshift-serverless-fips.us-east-1.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "signingScope": "us-east-1",
+                            "name": "v4",
+                            "signingName": "redshift-serverless"
+                        }
+                    ]
+                },
+                "headers": {}
+            }
+        },
+        {
+            "documentation": "For region us-east-1 with FIPS enabled and DualStack disabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "us-east-1",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://redshift-serverless-fips.us-east-1.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "signingScope": "us-east-1",
+                            "name": "v4",
+                            "signingName": "redshift-serverless"
+                        }
+                    ]
+                },
+                "headers": {}
+            }
+        },
+        {
+            "documentation": "For region us-east-1 with FIPS disabled and DualStack enabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "us-east-1",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://redshift-serverless.us-east-1.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "signingScope": "us-east-1",
+                            "name": "v4",
+                            "signingName": "redshift-serverless"
+                        }
+                    ]
+                },
+                "headers": {}
+            }
+        },
+        {
+            "documentation": "For region us-east-1 with FIPS disabled and DualStack disabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "us-east-1",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://redshift-serverless.us-east-1.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "signingScope": "us-east-1",
+                            "name": "v4",
+                            "signingName": "redshift-serverless"
+                        }
+                    ]
+                },
+                "headers": {}
+            }
+        },
+        {
+            "documentation": "For region us-east-2 with FIPS enabled and DualStack enabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "us-east-2",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://redshift-serverless-fips.us-east-2.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "signingScope": "us-east-2",
+                            "name": "v4",
+                            "signingName": "redshift-serverless"
+                        }
+                    ]
+                },
+                "headers": {}
+            }
+        },
+        {
+            "documentation": "For region us-east-2 with FIPS enabled and DualStack disabled",
+            "params": {
+                "UseFIPS": true,
+                "Region": "us-east-2",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://redshift-serverless-fips.us-east-2.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "signingScope": "us-east-2",
+                            "name": "v4",
+                            "signingName": "redshift-serverless"
+                        }
+                    ]
+                },
+                "headers": {}
+            }
+        },
+        {
+            "documentation": "For region us-east-2 with FIPS disabled and DualStack enabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "us-east-2",
+                "UseDualStack": true
+            },
+            "expect": {
+                "url": "https://redshift-serverless.us-east-2.api.aws",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "signingScope": "us-east-2",
+                            "name": "v4",
+                            "signingName": "redshift-serverless"
+                        }
+                    ]
+                },
+                "headers": {}
+            }
+        },
+        {
+            "documentation": "For region us-east-2 with FIPS disabled and DualStack disabled",
+            "params": {
+                "UseFIPS": false,
+                "Region": "us-east-2",
+                "UseDualStack": false
+            },
+            "expect": {
+                "url": "https://redshift-serverless.us-east-2.amazonaws.com",
+                "properties": {
+                    "authSchemes": [
+                        {
+                            "signingScope": "us-east-2",
+                            "name": "v4",
+                            "signingName": "redshift-serverless"
+                        }
+                    ]
+                },
+                "headers": {}
+            }
+        }
+    ]
+}
