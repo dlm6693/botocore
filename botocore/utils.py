@@ -36,6 +36,7 @@ import botocore.httpsession
 # IP Regexes retained for backwards compatibility
 from botocore.compat import HEX_PAT  # noqa: F401
 from botocore.compat import IPV4_PAT  # noqa: F401
+from botocore.compat import IPV4_RE  # noqa: F401
 from botocore.compat import IPV6_ADDRZ_PAT  # noqa: F401
 from botocore.compat import IPV6_ADDRZ_RE  # noqa: F401
 from botocore.compat import IPV6_PAT  # noqa: F401
@@ -1217,6 +1218,13 @@ def is_valid_ipv6_endpoint_url(endpoint_url):
         return False
     hostname = f'[{urlparse(endpoint_url).hostname}]'
     return IPV6_ADDRZ_RE.match(hostname) is not None
+
+
+def is_valid_ipv4_endpoint_url(endpoint_url):
+    if UNSAFE_URL_CHARS.intersection(endpoint_url):
+        return False
+    hostname = f'{urlparse(endpoint_url).hostname}'
+    return IPV4_RE.match(hostname) is not None
 
 
 def is_valid_endpoint_url(endpoint_url):

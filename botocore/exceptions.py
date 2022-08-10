@@ -775,3 +775,17 @@ class FlexibleChecksumError(BotoCoreError):
 
 class InvalidEndpointConfigurationError(BotoCoreError):
     fmt = 'Invalid endpoint configuration: {msg}'
+
+
+class EndpointRulesetError(BotoCoreError):
+    """Error when input parameters for an endpoint are wrongly configured."""
+
+
+class EndpointResolutionError(EndpointRulesetError):
+
+    fmt = '{msg}'
+
+
+class EndpointInputParametersError(EndpointRulesetError):
+
+    fmt = 'Input parameters are invalid: {msg}'
