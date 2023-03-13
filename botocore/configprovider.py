@@ -10,7 +10,7 @@
 # distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF
 # ANY KIND, either express or implied. See the License for the specific
 # language governing permissions and limitations under the License.
-"""This module contains the inteface for controlling how configuration
+"""This module contains the interface for controlling how configuration
 is loaded.
 """
 import copy
@@ -303,11 +303,11 @@ class ConfigChainFactory:
     ):
         """Build a config chain following the standard botocore pattern.
 
-        In botocore most of our config chains follow the the precendence:
+        In botocore most of our config chains follow the the precedence:
         session_instance_variables, environment, config_file, default_value.
 
         This is a convenience function for creating a chain that follow
-        that precendence.
+        that precedence.
 
         :type instance_name: str
         :param instance_name: This indicates what session instance variable
@@ -406,7 +406,7 @@ class ConfigValueStore:
 
     def get_config_variable(self, logical_name):
         """
-        Retrieve the value associeated with the specified logical_name
+        Retrieve the value associated with the specified logical_name
         from the corresponding provider. If no value is found None will
         be returned.
 
@@ -596,7 +596,7 @@ class ChainProvider(BaseProvider):
     """
 
     def __init__(self, providers=None, conversion_func=None):
-        """Initalize a ChainProvider.
+        """Initialize a ChainProvider.
 
         :type providers: list
         :param providers: The initial list of providers to check for values

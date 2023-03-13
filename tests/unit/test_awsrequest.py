@@ -350,15 +350,15 @@ class TestAWSHTTPConnection(unittest.TestCase):
         # Imitate readline function by creating a list to be sent as
         # a side effect of the mocked readline to be able to track how the
         # response is processed in ``_tunnel()``.
-        delimeter = b'\r\n'
+        delimiter = b'\r\n'
         side_effect = []
-        response_components = response.split(delimeter)
+        response_components = response.split(delimiter)
         for i in range(len(response_components)):
             new_component = response_components[i]
-            # Only add the delimeter on if it is not the last component
+            # Only add the delimiter on if it is not the last component
             # which should be an empty string.
             if i != len(response_components) - 1:
-                new_component += delimeter
+                new_component += delimiter
             side_effect.append(new_component)
 
         self.mock_response.fp.readline.side_effect = side_effect
@@ -589,7 +589,7 @@ class TestAWSHTTPConnection(unittest.TestCase):
             self.assertEqual(response.status, 500)
 
             # Now what happens in urllib3 is that when the next
-            # request comes along and this conection gets checked
+            # request comes along and this connection gets checked
             # out.  We see that the connection needs to be
             # reset.  So first the connection is closed.
             conn.close()

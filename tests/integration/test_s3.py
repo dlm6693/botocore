@@ -987,7 +987,7 @@ class TestS3SigV4Client(BaseS3ClientTest):
         # use the us-east-1 endpoint class to get the bucket location.
         client = self.session.create_client('s3', 'us-east-1')
         # Also keep in mind that while this test is useful, it doesn't test
-        # what happens once DNS propogates which is arguably more interesting,
+        # what happens once DNS propagates which is arguably more interesting,
         # as DNS will point us to the eu-central-1 endpoint.
         response = client.get_bucket_location(Bucket=self.bucket_name)
         self.assertEqual(response['LocationConstraint'], 'us-west-2')

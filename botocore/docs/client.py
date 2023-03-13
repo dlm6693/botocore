@@ -342,7 +342,7 @@ class ClientExceptionsDocumenter:
         section.include_doc_string(
             'The parsed error response. All exceptions have a top level '
             '``Error`` key that provides normalized access to common '
-            'exception atrributes. All other keys are specific to this '
+            'exception attributes. All other keys are specific to this '
             'service or exception class.'
         )
         section.style.new_line()

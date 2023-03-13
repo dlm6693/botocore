@@ -197,7 +197,7 @@ def document_paginate_method(
     service_pagination_params = []
 
     # Add the normal input token of the method to a list
-    # of input paramters that we wish to hide since we expose our own.
+    # of input parameters that we wish to hide since we expose our own.
     if isinstance(paginator_config['input_token'], list):
         service_pagination_params += paginator_config['input_token']
     else:

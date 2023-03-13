@@ -856,7 +856,7 @@ def percent_encode_sequence(mapping, safe=SAFE_CHARS):
       to be encoded, which matches what AWS services expect.
 
     If any value in the input ``mapping`` is a list type,
-    then each list element wil be serialized.  This is the equivalent
+    then each list element will be serialized.  This is the equivalent
     to ``urlencode``'s ``doseq=True`` argument.
 
     This function should be preferred over the stdlib
@@ -2073,7 +2073,7 @@ class S3EndpointSetter:
             if self._use_fips_endpoint:
                 raise UnsupportedS3ConfigurationError(
                     msg=(
-                        'Client is configured to use the FIPS psuedo region '
+                        'Client is configured to use the FIPS pseudo region '
                         'for "%s", but S3 Accelerate does not have any FIPS '
                         'compatible endpoints.' % (self._region)
                     )
@@ -2095,12 +2095,12 @@ class S3EndpointSetter:
         if 'outpost_name' in request.context['s3_accesspoint']:
             raise UnsupportedS3AccesspointConfigurationError(
                 msg=(
-                    'Client is configured to use the FIPS psuedo-region "%s", '
+                    'Client is configured to use the FIPS pseudo-region "%s", '
                     'but outpost ARNs do not support FIPS endpoints.'
                     % (self._region)
                 )
             )
-        # Transforming psuedo region to actual region
+        # Transforming pseudo region to actual region
         accesspoint_region = request.context['s3_accesspoint']['region']
         if accesspoint_region != self._region:
             if not self._s3_config.get('use_arn_region', True):
@@ -2108,10 +2108,10 @@ class S3EndpointSetter:
                 # is not set
                 raise UnsupportedS3AccesspointConfigurationError(
                     msg=(
-                        'Client is configured to use the FIPS psuedo-region '
+                        'Client is configured to use the FIPS pseudo-region '
                         'for "%s", but the access-point ARN provided is for '
                         'the "%s" region. For clients using a FIPS '
-                        'psuedo-region calls to access-point ARNs in another '
+                        'pseudo-region calls to access-point ARNs in another '
                         'region are not allowed.'
                         % (self._region, accesspoint_region)
                     )
@@ -2123,7 +2123,7 @@ class S3EndpointSetter:
         if self._region in ['aws-global', 's3-external-1']:
             raise UnsupportedS3AccesspointConfigurationError(
                 msg=(
-                    'Client is configured to use the global psuedo-region '
+                    'Client is configured to use the global pseudo-region '
                     '"%s". When providing access-point ARNs a regional '
                     'endpoint must be specified.' % self._region
                 )

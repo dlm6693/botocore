@@ -161,7 +161,7 @@ class ProfileProviderBuilder:
     NOTE: This class is only intended for internal use.
 
     This class handles the creation and ordering of the various credential
-    providers that primarly source their configuration from the shared config.
+    providers that primarily source their configuration from the shared config.
     This is needed to enable sharing between the default credential chain and
     the source profile chain created by the assume role provider.
     """

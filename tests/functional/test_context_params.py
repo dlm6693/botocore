@@ -34,7 +34,7 @@ FAKE_RULESET_TEMPLATE = {
 }
 
 # The region param is unrelated to context parameters and used as control in
-# all test cases to ascertain that ANY EndpointProvider paramaters get
+# all test cases to ascertain that ANY EndpointProvider parameters get
 # populated.
 REGION_PARAM = {
     "builtIn": "AWS::Region",

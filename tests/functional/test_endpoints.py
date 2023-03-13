@@ -219,7 +219,7 @@ def test_no_s3_fips_regions(region_name):
 
     err_msg = (
         'New S3 FIPS pseudo-region added: "{region_name}". '
-        'FIPS has compliancy requirements that may not be met in all cases '
+        'FIPS has compliance requirements that may not be met in all cases '
         'for S3 clients due to the custom endpoint resolution and '
         'construction logic.'
     )

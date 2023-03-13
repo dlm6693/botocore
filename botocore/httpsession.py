@@ -207,7 +207,7 @@ class ProxyConfiguration:
     """Represents a proxy configuration dictionary and additional settings.
 
     This class represents a proxy configuration dictionary and provides utility
-    functions to retreive well structured proxy urls and proxy headers from the
+    functions to retrieve well structured proxy urls and proxy headers from the
     proxy configuration dictionary.
     """
 

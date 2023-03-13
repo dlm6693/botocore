@@ -12,3 +12,21 @@ src_paths = ["botocore", "tests"]
 [tool.black]
 line-length = 79
 skip_string_normalization = true
+
+[tool.codespell]
+skip = """\
+    ./botocore/data,\
+    ./botocore/cacert.pem,\
+    ./botocore/vendored,\
+    ./tests/functional/data,\
+    ./tests/functional/endpoint-rules,\
+    ./tests/functional/csm/data,\
+    ./tests/functional/models,\
+    ./CHANGELOG.rst,\
+    ./docs/source/_static/shortbreadv1.js,\
+    ./tests/unit/data/endpoints/valid-rules,\
+    ./.git,\
+    ./botocore.egg-info,\
+    ./.pytest_cache,\
+"""
+exclude-file=".codespellignorelines"

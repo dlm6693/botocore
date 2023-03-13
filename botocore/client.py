@@ -218,7 +218,7 @@ class ClientCreator:
                 logger.warning(
                     'transforming region from %s to %s and setting '
                     'use_fips_endpoint to true. client should not '
-                    'be configured with a fips psuedo region.'
+                    'be configured with a fips pseudo region.'
                     % (region_name, normalized_region_name)
                 )
                 region_name = normalized_region_name
@@ -1045,7 +1045,7 @@ class BaseClient:
         returned.
 
         Use ignore_signing_region for generating presigned URLs or any other
-        situtation where the signing region information from the ruleset
+        situation where the signing region information from the ruleset
         resolver should be ignored.
 
         Returns tuple of URL and headers dictionary. Additionally, the

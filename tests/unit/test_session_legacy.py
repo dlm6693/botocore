@@ -33,7 +33,7 @@ from tests import create_session, mock, temporary_file, unittest
 
 # This is an old version of the session tests to ensure backwards compatibility
 # there is a new unit/test_session.py set of tests for the new config interface
-# which should be prefered. When backwards compatibility can be dropped then
+# which should be preferred. When backwards compatibility can be dropped then
 # this test should be removed.
 class BaseSessionTest(unittest.TestCase):
     def setUp(self):
@@ -176,7 +176,7 @@ class SessionTest(BaseSessionTest):
         )
 
     def test_default_profile_specified_raises_exception(self):
-        # If you explicity set the default profile and you don't
+        # If you explicitly set the default profile and you don't
         # have that in your config file, an exception is raised.
         config_path = os.path.join(
             os.path.dirname(__file__), 'cfg', 'boto_config_empty'

@@ -165,7 +165,7 @@ class BaseExampleDocumenter(ShapeDocumenter):
             section.write(end)
 
     def _end_structure(self, section, start, end):
-        # If there are no members in the strucuture, then make sure the
+        # If there are no members in the structure, then make sure the
         # start and the end bracket are on the same line, by removing all
         # previous text and writing the start and end.
         if not section.available_sections:

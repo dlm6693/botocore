@@ -373,7 +373,7 @@ class TestS3SigV4Auth(BaseTestWithFixedDate):
         request.method = 'GET'
 
         # Check that the canonical query string is correct formatting
-        # by ensuring that query string paramters that are added to the
+        # by ensuring that query string parameters that are added to the
         # canonical query string are correctly formatted.
         cqs = self.auth.canonical_query_string(request)
         self.assertEqual('marker=%C3%A4%C3%B6%C3%BC-01.txt&prefix=', cqs)

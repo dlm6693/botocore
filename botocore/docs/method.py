@@ -203,7 +203,7 @@ def document_model_driven_method(
         method_intro_section.writeln(
             'This operation is deprecated and may not function as '
             'expected. This operation should not be used going forward '
-            'and is only kept for the purpose of backwards compatiblity.'
+            'and is only kept for the purpose of backwards compatibility.'
         )
         method_intro_section.style.end_danger()
     service_uid = operation_model.service_model.metadata.get('uid')

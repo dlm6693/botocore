@@ -102,5 +102,5 @@ class TestTokenBucketThreading(unittest.TestCase):
             self.shutdown_threads = True
             for thread in all_threads:
                 thread.join()
-        # Verify all threads complete sucessfully
+        # Verify all threads complete successfully
         self.assertEqual(self.caught_exceptions, [])

@@ -216,7 +216,7 @@ class SigV4Auth(BaseSigner):
     def __init__(self, credentials, service_name, region_name):
         self.credentials = credentials
         # We initialize these value here so the unit tests can have
-        # valid values.  But these will get overriden in ``add_auth``
+        # valid values.  But these will get overridden in ``add_auth``
         # later for real requests.
         self._region_name = region_name
         self._service_name = service_name

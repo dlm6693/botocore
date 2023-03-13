@@ -23,7 +23,7 @@ import botocore.exceptions
 def multi_file_load_config(*filenames):
     """Load and combine multiple INI configs with profiles.
 
-    This function will take a list of filesnames and return
+    This function will take a list of filenames and return
     a single dictionary that represents the merging of the loaded
     config files.
 

@@ -16,7 +16,7 @@ class RetryQuota:
         self._lock = lock
 
     def acquire(self, capacity_amount):
-        """Attempt to aquire a certain amount of capacity.
+        """Attempt to acquire a certain amount of capacity.
 
         If there's not sufficient amount of capacity available, ``False``
         is returned.  Otherwise, ``True`` is returned, which indicates that

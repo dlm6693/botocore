@@ -1036,7 +1036,7 @@ class RestXMLParser(BaseRestParser, BaseXMLResponseParser):
     def _do_error_parse(self, response, shape):
         # We're trying to be service agnostic here, but S3 does have a slightly
         # different response structure for its errors compared to other
-        # rest-xml serivces (route53/cloudfront).  We handle this by just
+        # rest-xml services (route53/cloudfront).  We handle this by just
         # trying to parse both forms.
         # First:
         # <ErrorResponse xmlns="...">
@@ -1091,7 +1091,7 @@ class RestXMLParser(BaseRestParser, BaseXMLResponseParser):
             parsed.pop('HostId', '')
             return {'Error': parsed, 'ResponseMetadata': metadata}
         elif 'RequestId' in parsed:
-            # Other rest-xml serivces:
+            # Other rest-xml services:
             parsed['ResponseMetadata'] = {'RequestId': parsed.pop('RequestId')}
         default = {'Error': {'Message': '', 'Code': ''}}
         merge_dicts(default, parsed)

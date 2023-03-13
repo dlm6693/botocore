@@ -450,6 +450,6 @@ class TestDocumentModelDrivenMethod(BaseDocsTest):
                 '  .. danger::',
                 '        This operation is deprecated and may not function as '
                 'expected. This operation should not be used going forward and is '
-                'only kept for the purpose of backwards compatiblity.',
+                'only kept for the purpose of backwards compatibility.',
             ]
         )

@@ -440,7 +440,7 @@ class ClientArgsCreator:
         # There's a pre-existing max_attempts client config value that actually
         # means max *retry* attempts.  There's also a `max_attempts` we pull
         # from the config store that means *total attempts*, which includes the
-        # intitial request.  We can't change what `max_attempts` means in
+        # initial request.  We can't change what `max_attempts` means in
         # client config so we try to normalize everything to a new
         # "total_max_attempts" variable.  We ensure that after this, the only
         # configuration for "max attempts" is the 'total_max_attempts' key.

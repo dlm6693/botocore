@@ -31,7 +31,7 @@ class BaseClientExceptions:
         """Retrieves the error class based on the error code
 
         This is helpful for identifying the exception class needing to be
-        caught based on the ClientError.parsed_reponse['Error']['Code'] value
+        caught based on the ClientError.parsed_response['Error']['Code'] value
 
         :type error_code: string
         :param error_code: The error code associated to a ClientError exception

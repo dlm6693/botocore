@@ -382,7 +382,7 @@ class TestValidateTypes(BaseTestValidate):
 
     def test_can_handle_none_datetimes(self):
         # This is specifically to test a workaround a bug in dateutil
-        # where low level exceptions can propogate back up to
+        # where low level exceptions can propagate back up to
         # us.
         errors = self.get_validation_error_message(
             given_shapes=self.shapes, input_params={'Timestamp': None}

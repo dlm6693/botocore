@@ -319,7 +319,7 @@ class Session:
         )
 
     def _get_config_variable_with_custom_methods(self, logical_name, methods):
-        # If a custom list of methods was supplied we need to perserve the
+        # If a custom list of methods was supplied we need to preserve the
         # behavior with the new system. To do so a new chain that is a copy of
         # the old one will be constructed, but only with the supplied methods
         # being added to the chain. This chain will be consulted for a value
@@ -536,7 +536,7 @@ class Session:
          - agent_version is the value of the `user_agent_version`
            attribute of the session object (the botocore version by default).
            by default.
-         - py_ver is the version of the Python interpreter beng used.
+         - py_ver is the version of the Python interpreter being used.
          - plat_name is the name of the platform (e.g. Darwin)
          - plat_ver is the version of the platform
          - exec_env is exec-env/$AWS_EXECUTION_ENV
@@ -723,7 +723,7 @@ class Session:
 
         :param unique_id_uses_count: boolean
         :param unique_id_uses_count: Specifies if the event should maintain
-            a count when a ``unique_id`` is registered and unregisted. The
+            a count when a ``unique_id`` is registered and unregistered. The
             event can only be completely unregistered once every register call
             using the unique id has been matched by an ``unregister`` call.
             If ``unique_id`` is specified, subsequent ``register``
@@ -764,7 +764,7 @@ class Session:
 
         :param unique_id_uses_count: boolean
         :param unique_id_uses_count: Specifies if the event should maintain
-            a count when a ``unique_id`` is registered and unregisted. The
+            a count when a ``unique_id`` is registered and unregistered. The
             event can only be completely unregistered once every ``register``
             call using the ``unique_id`` has been matched by an ``unregister``
             call. If the ``unique_id`` is specified, subsequent

@@ -287,7 +287,7 @@ class ReSTStyle(BaseStyle):
             or next_child.data[0] not in PUNCTUATION_CHARACTERS
         ):
             # We only want to add a trailing space if the link is
-            # not followed by a period, comma, or other gramatically
+            # not followed by a period, comma, or other grammatically
             # correct special character.
             self.doc.write(' ')
 

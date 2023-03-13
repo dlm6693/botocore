@@ -72,7 +72,7 @@ class TestStreamWrapper(unittest.TestCase):
         with self.assertRaises(IncompleteReadError):
             self.assertEqual(stream.read(9), b'123456789')
             # The next read will have nothing returned and raise
-            # an IncompleteReadError because we were expectd 10 bytes, not 9.
+            # an IncompleteReadError because we were expected 10 bytes, not 9.
             stream.read()
 
     def test_streaming_body_readable(self):

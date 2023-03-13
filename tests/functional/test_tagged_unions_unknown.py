@@ -18,7 +18,7 @@ class TestTaggedUnionsUnknown(unittest.TestCase):
     def test_tagged_union_member_name_does_not_coincide_with_unknown_key(self):
         # This test ensures that operation models do not use SDK_UNKNOWN_MEMBER
         # as a member name. Thereby reserving SDK_UNKNOWN_MEMBER for the parser to
-        # set as a key on the reponse object. This is necessary when the client
+        # set as a key on the response object. This is necessary when the client
         # encounters a member that it is unaware of or not modeled.
         session = Session()
         for service_name in session.get_available_services():

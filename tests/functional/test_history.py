@@ -69,7 +69,7 @@ class TestRecordStatementsInjections(BaseSessionTest):
         self.assertEqual(method, 'GET')
 
         # The header values vary too much per request to verify them here.
-        # Instead just check the presense of each expected header.
+        # Instead just check the presence of each expected header.
         headers = payload['headers']
         for expected_header in [
             'Authorization',

@@ -348,7 +348,7 @@ class AWSRequestPreparer:
         Botocore either performs these validations elsewhere or otherwise
         consistently provides well formatted URLs.
 
-        This class does not heavily prepare the body. Body preperation is
+        This class does not heavily prepare the body. Body preparation is
         simple and supports only the cases that we document: bytes and
         file-like objects to determine the content-length. This will also
         additionally prepare a body that is a dict to be url encoded params
@@ -573,7 +573,7 @@ class AWSResponse:
     def text(self):
         """Content of the response as a proper text type.
 
-        Uses the encoding type provided in the reponse headers to decode the
+        Uses the encoding type provided in the response headers to decode the
         response content into a proper text type. If the encoding is not
         present in the headers, UTF-8 is used as a default.
         """

@@ -439,7 +439,7 @@ def _walk_files():
 
 
 def _load_cases(full_path):
-    # During developement, you can set the BOTOCORE_TEST_ID
+    # During development, you can set the BOTOCORE_TEST_ID
     # to run a specific test suite or even a specific test case.
     # The format is BOTOCORE_TEST_ID=suite_id:test_id or
     # BOTOCORE_TEST_ID=suite_id

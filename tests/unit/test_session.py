@@ -186,7 +186,7 @@ class SessionTest(BaseSessionTest):
         )
 
     def test_default_profile_specified_raises_exception(self):
-        # If you explicity set the default profile and you don't
+        # If you explicitly set the default profile and you don't
         # have that in your config file, an exception is raised.
         config_path = os.path.join(
             os.path.dirname(__file__), 'cfg', 'boto_config_empty'

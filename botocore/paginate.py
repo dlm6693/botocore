@@ -106,7 +106,7 @@ class TokenDecoder:
     """Decodes token strings back into dictionaries.
 
     This performs the inverse operation to the TokenEncoder, accepting
-    opaque strings and decoding them into a useable form.
+    opaque strings and decoding them into a usable form.
     """
 
     def decode(self, token):

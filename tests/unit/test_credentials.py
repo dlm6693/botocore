@@ -2453,7 +2453,7 @@ class TestAssumeRoleCredentialProvider(unittest.TestCase):
             profile_name='development',
         )
 
-        # source_profile is required, we shoudl get an error.
+        # source_profile is required, we should get an error.
         with self.assertRaises(botocore.exceptions.PartialCredentialsError):
             provider.load()
 
@@ -2467,7 +2467,7 @@ class TestAssumeRoleCredentialProvider(unittest.TestCase):
             profile_name='development',
         )
 
-        # source_profile is required, we shoudl get an error.
+        # source_profile is required, we should get an error.
         with self.assertRaises(botocore.exceptions.InvalidConfigError):
             provider.load()
 
@@ -2790,7 +2790,7 @@ class TestJSONCache(unittest.TestCase):
 
     def test_supports_contains_check(self):
         # By default the cache is empty because we're
-        # using a new temp dir everytime.
+        # using a new temp dir every time.
         self.assertTrue('mykey' not in self.cache)
 
     def test_add_key_and_contains_check(self):
@@ -2914,12 +2914,12 @@ class TestRefreshLogic(unittest.TestCase):
         # We should have called the refresh function.
         self.assertTrue(fail_refresh.called)
         # The fail_refresh function will raise an exception.
-        # Because we're in the advisory period we'll not propogate
+        # Because we're in the advisory period we'll not propagate
         # the exception and return the current set of credentials
         # (generation '1').
         self.assertEqual(temp, credentials.ReadOnlyCredentials('0', '0', '0'))
 
-    def test_exception_propogated_on_error_during_mandatory_period(self):
+    def test_exception_propagated_on_error_during_mandatory_period(self):
         fail_refresh = mock.Mock(side_effect=Exception("refresh failed"))
         creds = IntegerRefresher(
             creds_last_for=5,
@@ -2931,7 +2931,7 @@ class TestRefreshLogic(unittest.TestCase):
         with self.assertRaisesRegex(Exception, 'refresh failed'):
             creds.get_frozen_credentials()
 
-    def test_exception_propogated_on_expired_credentials(self):
+    def test_exception_propagated_on_expired_credentials(self):
         fail_refresh = mock.Mock(side_effect=Exception("refresh failed"))
         creds = IntegerRefresher(
             # Setting this to 0 mean the credentials are immediately
@@ -3218,7 +3218,7 @@ class TestProcessProvider(BaseEnvVar):
 
     def test_can_refresh_credentials(self):
         # We given a time that's already expired so .access_key
-        # will trigger the refresh worfklow.  We just need to verify
+        # will trigger the refresh workflow.  We just need to verify
         # that the refresh function gives the same result as the
         # initial retrieval.
         expired_date = '2016-01-01T00:00:00Z'

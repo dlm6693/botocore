@@ -35,7 +35,7 @@ class TestEC2(unittest.TestCase):
         )
 
     def test_get_console_output_handles_error(self):
-        # Want to ensure the underlying ClientError is propogated
+        # Want to ensure the underlying ClientError is propagated
         # on error.
         with self.assertRaises(ClientError):
             self.client.get_console_output(InstanceId='i-12345')

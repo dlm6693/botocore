@@ -265,7 +265,7 @@ class TestCreateRetryConfiguration(unittest.TestCase):
             )
 
     def test_connection_timeouts_are_retried(self):
-        # If a connection times out, we get a Timout exception
+        # If a connection times out, we get a timeout exception
         # from requests.  We should be retrying those.
         handler = retryhandler.create_retry_handler(
             self.retry_config, operation_name='OperationBar'
@@ -288,7 +288,7 @@ class TestCreateRetryConfiguration(unittest.TestCase):
         self.assertEqual(handler._action(attempts=2), 2)
         self.assertEqual(handler._action(attempts=3), 4)
 
-    def test_crc32_check_propogates_error(self):
+    def test_crc32_check_propagates_error(self):
         handler = retryhandler.create_retry_handler(
             self.retry_config, operation_name='OperationFoo'
         )

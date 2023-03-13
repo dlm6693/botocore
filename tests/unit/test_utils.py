@@ -2506,7 +2506,7 @@ class TestContainerMetadataFetcher(unittest.TestCase):
         self.assertEqual(self.http.send.call_count, fetcher.RETRY_ATTEMPTS)
 
     def test_error_raised_on_no_json_response(self):
-        # If the service returns a sucess response but with a body that
+        # If the service returns a success response but with a body that
         # does not contain JSON, we should still retry up to RETRY_ATTEMPTS,
         # but after exhausting retries we propagate the exception.
         self.set_http_responses_to(

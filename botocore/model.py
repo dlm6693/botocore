@@ -377,7 +377,7 @@ class ServiceModel:
         """The name of the service.
 
         This defaults to the endpointPrefix defined in the service model.
-        However, this value can be overriden when a ``ServiceModel`` is
+        However, this value can be overridden when a ``ServiceModel`` is
         created.  If a service_name was not provided when the ``ServiceModel``
         was created and if there is no endpointPrefix defined in the
         service model, then an ``UndefinedModelAttributeError`` exception
@@ -509,7 +509,7 @@ class OperationModel:
         self._service_model = service_model
         self._api_name = name
         # Clients can access '.name' to get the operation name
-        # and '.metadata' to get the top level metdata of the service.
+        # and '.metadata' to get the top level metadata of the service.
         self._wire_name = operation_model.get('name')
         self.metadata = service_model.metadata
         self.http = operation_model.get('http', {})
@@ -527,7 +527,7 @@ class OperationModel:
 
         In many situations this is the same value as the
         ``name``, value, but in some services, the operation name
-        exposed to the user is different from the operaiton name
+        exposed to the user is different from the operation name
         we send across the wire (e.g cloudfront).
 
         Any serialization code should use ``wire_name``.
