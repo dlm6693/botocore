@@ -17,12 +17,10 @@ skip_string_normalization = true
 skip = """\
     ./botocore/data,\
     ./botocore/cacert.pem,\
-    botocore/cacert.pem,\
     ./botocore/vendored,\
     ./tests/functional/data,\
     ./tests/functional/endpoint-rules,\
     ./tests/functional/csm/data,\
-    tests/functional/csm/data,\
     ./tests/functional/models,\
     ./CHANGELOG.rst,\
     ./docs/source/_static/shortbreadv1.js,\
