@@ -16,6 +16,6 @@ jobs:
       with:
         python-version: 3.9
     - name: test
-      run: ls
+      run: ls -d .*
     - name: Run pre-commit
       uses: pre-commit/action@v3.0.0
