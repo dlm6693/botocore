@@ -41,5 +41,10 @@ repos:
     rev: v2.2.4
     hooks:
     - id: codespell
+      args:
+        - '-x'
+        - '.codespellignorelines'
+        - '--toml'
+        - 'pyproject.toml'
       additional_dependencies:
         - tomli
