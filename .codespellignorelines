@@ -8,7 +8,7 @@
             b"0\r\n"
             b"checksum:DUoRhQ==\r\n\r\n"
         )
-        
+
         expected_chunks = [
             b"5\r\nhello\r\n",
             b"5\r\n worl\r\n",
