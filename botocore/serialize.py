@@ -42,6 +42,7 @@ import calendar
 import datetime
 import json
 import re
+from urllib.parse import urlencode
 from xml.etree import ElementTree
 
 from botocore import validate
@@ -222,7 +223,9 @@ class QuerySerializer(Serializer):
         body_params['Version'] = operation_model.metadata['apiVersion']
         if shape is not None:
             self._serialize(body_params, parameters, shape)
-        serialized['body'] = body_params
+        serialized['body'] = urlencode(
+            body_params, encoding=self.DEFAULT_ENCODING, doseq=True
+        ).encode(self.DEFAULT_ENCODING)
 
         host_prefix = self._expand_host_prefix(parameters, operation_model)
         if host_prefix is not None:
