@@ -30,6 +30,7 @@ from botocore.compat import (
     encodebytes,
     ensure_unicode,
     parse_qs,
+    parse_qsl,
     quote,
     unquote,
     urlsplit,
@@ -164,6 +165,8 @@ class SigV2Auth(BaseSigner):
         if request.data:
             # POST
             params = request.data
+            if not isinstance(params, dict):
+                params = dict(parse_qsl(params))
         else:
             # GET
             params = request.params
