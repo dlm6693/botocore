@@ -220,6 +220,12 @@ class Config:
         set to True.
 
         Defaults to None.
+
+    :type account_id_endpoint_mode: str
+    :param account_id_endpoint_mode: Enables or disables account ID based
+        endpoint routing for supported operations.
+
+        Defaults to None.
     """
 
     OPTION_DEFAULTS = OrderedDict(
@@ -247,6 +253,7 @@ class Config:
             ('tcp_keepalive', None),
             ('request_min_compression_size_bytes', None),
             ('disable_request_compression', None),
+            ('account_id_endpoint_mode', None),
         ]
     )
 

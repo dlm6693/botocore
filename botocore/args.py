@@ -165,6 +165,7 @@ class ClientArgsCreator:
             is_secure,
             endpoint_bridge,
             event_emitter,
+            credentials,
         )
 
         # Copy the session's user agent factory and adds client configuration.
@@ -266,11 +267,15 @@ class ClientArgsCreator:
                 disable_request_compression=(
                     client_config.disable_request_compression
                 ),
+                account_id_endpoint_mode=(
+                    client_config.account_id_endpoint_mode
+                ),
             )
         self._compute_retry_config(config_kwargs)
         self._compute_connect_timeout(config_kwargs)
         self._compute_user_agent_appid_config(config_kwargs)
         self._compute_request_compression_config(config_kwargs)
+        self._compute_account_id_endpoint_mode(config_kwargs)
         s3_config = self.compute_s3_config(client_config)
 
         is_s3_service = self._is_s3_service(service_name)
@@ -597,6 +602,14 @@ class ClientArgsCreator:
 
         return min_size
 
+    def _compute_account_id_endpoint_mode(self, config_kwargs):
+        ep_mode = config_kwargs.get('account_id_endpoint_mode')
+        if ep_mode is None:
+            ep_mode = self._config_store.get_config_variable(
+                'account_id_endpoint_mode'
+            )
+            config_kwargs['account_id_endpoint_mode'] = ep_mode
+
     def _ensure_boolean(self, val):
         if isinstance(val, bool):
             return val
@@ -616,6 +629,7 @@ class ClientArgsCreator:
         is_secure,
         endpoint_bridge,
         event_emitter,
+        credentials,
     ):
         if endpoints_ruleset_data is None:
             return None
@@ -663,6 +677,7 @@ class ClientArgsCreator:
             event_emitter=event_emitter,
             use_ssl=is_secure,
             requested_auth_scheme=sig_version,
+            credentials=credentials,
         )
 
     def compute_endpoint_resolver_builtin_defaults(
@@ -747,6 +762,9 @@ class ClientArgsCreator:
                 's3_disable_multiregion_access_points', False
             ),
             EPRBuiltins.SDK_ENDPOINT: given_endpoint,
+            # account ID is calculated later if account based routing is
+            # enabled and configured for the service
+            EPRBuiltins.AWS_ACCOUNT_ID: None,
         }
 
     def _compute_user_agent_appid_config(self, config_kwargs):
